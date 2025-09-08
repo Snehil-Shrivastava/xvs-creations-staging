@@ -1,15 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins, Cal_Sans } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
+import { ModalProvider } from "@/context/ModalContext";
+import Navbar from "@/components/Navbar/Navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const poppins = Poppins({
+  variable: "--font-poppins",
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const calSans = Cal_Sans({
+  variable: "--font-calSans",
+  weight: ["400"],
+});
+
+const apercuBlack = localFont({
+  src: "../public/fonts/Apercu-Pro-Black.ttf",
+  variable: "--font-apercu-black",
 });
 
 export const metadata: Metadata = {
@@ -25,9 +33,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${poppins.variable} ${calSans.variable} ${apercuBlack.variable} antialiased ${poppins.className}`}
       >
-        {children}
+        <ModalProvider>
+          <Navbar />
+          {children}
+        </ModalProvider>
       </body>
     </html>
   );

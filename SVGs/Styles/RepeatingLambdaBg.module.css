@@ -1,0 +1,52 @@
+.repeatingBgContainer {
+  mask-image: linear-gradient(black 60%, transparent 85%);
+
+  overflow: hidden;
+
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+}
+
+.baseLayer,
+.glowLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.baseLayer {
+  opacity: 0.3;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.repeatingBgContainer:hover .baseLayer {
+  opacity: 0.18;
+}
+
+.baseLayer :global(path) {
+  stroke: gray;
+}
+
+.glowLayer {
+  mask-image: radial-gradient(
+    circle 200px at var(--mouse-x) var(--mouse-y),
+    black 20%,
+    transparent 100%
+  );
+
+  filter: drop-shadow(0 0 8px #f79839) drop-shadow(0 0 15px #fa8b1d);
+
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.repeatingBgContainer:hover .glowLayer {
+  opacity: 1;
+}
+
+.glowLayer :global(path) {
+  stroke: #ffaf5f;
+}

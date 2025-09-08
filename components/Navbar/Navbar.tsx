@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-import XVSlogo from "@/SVGs/XVSNavLogo";
+import XVSlogo from "@/SVGs/XVSLogo";
 import HamburgerMenu from "@/components/HamburgerMenu/HamburgerMenu";
 import NavigationModal from "@/components/NavigationModal/NavigationModal";
 import { useModal } from "@/context/ModalContext";

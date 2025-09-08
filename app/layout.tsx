@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { ModalProvider } from "@/context/ModalContext";
 import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -53,6 +54,7 @@ export default function RootLayout({
         <ModalProvider>
           <Navbar />
           {children}
+          <Footer />
         </ModalProvider>
       </body>
     </html>

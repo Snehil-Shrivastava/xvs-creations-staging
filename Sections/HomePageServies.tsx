@@ -20,14 +20,14 @@ import './Styles/HomePageServices.css'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { CardsData } from "@/data/HomePageStatData";
+import { cardsData} from "@/data/HomePageServicesData";
 import { NavigationOptions } from "swiper/types";
 
 const HomePageServices = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
-  const loopedCardsData = [...CardsData, ...CardsData];
+  const loopedCardsData = [...cardsData, ...cardsData];
 
   return (
     <div>
@@ -73,7 +73,7 @@ const HomePageServices = () => {
       >
         {loopedCardsData.map((card, index) => (
           <SwiperSlide key={`${card.id}-${index}`}>
-            <HoverGlowServicesCard index={index} />
+            <HoverGlowServicesCard index={index} card={card} />
           </SwiperSlide>
         ))}
         <div

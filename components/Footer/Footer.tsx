@@ -1,28 +1,20 @@
 "use client";
 
-import Link from "next/link";
-
 import "./Footer.css";
+import Link from "next/link";
 import Image from "next/image";
 
-import logo from "../../../../public/assests/xvs-logo-icon.png";
+import XVSlogo from "@/SVGs/XVSLogo";
 
-import icon1 from "../../../../public/assests/Vector (3).png";
-import icon2 from "../../../../public/assests/Vector (4).png";
-import icon3 from "../../../../public/assests/Vector (5).png";
-import icon4 from "../../../../public/assests/Exclude.png";
-import icon5 from "../../../../public/assests/Vector (6).png";
-import icon6 from "../../../../public/assests/Vector (7).png";
+import Behance from "@/SVGs/Behance";
+import Instagram from "@/SVGs/Instagram";
+import Dribbble from "@/SVGs/Dribbble";
+import Facebook from "@/SVGs/Facebook";
+import LinkedIn from "@/SVGs/LinkedIn";
+import Twitter from "@/SVGs/Twitter";
 
-import meetingSchedIcon from "../../../../public/assests/schedule-meeting-logo.png";
-import PulsingDiv from "../../PulsingDiv/PulsingDiv";
-import localFont from "next/font/local";
 import { useModal } from "@/context/ModalContext";
-import FooterBtnSVG from "../../SVGs/FooterBtnSVG";
-
-const calSans = localFont({
-  src: "../../../../public/fonts/CalSans-Regular.ttf",
-});
+import FooterBtnSVG from "@/SVGs/FooterBtnSVG";
 
 const Footer = () => {
   const { isModalOpen } = useModal();
@@ -41,9 +33,9 @@ const Footer = () => {
               <div className="flex gap-[48px] items-center justify-between pt-[111px] pb-[150px] min-[1536px]:w-[90%] min-[1536px]:mx-auto max-[1441px]:w-[85%] max-[1441px]:mx-auto max-[1441px]:pb-[70px] max-[1026px]:w-[85%] max-[1026px]:mx-auto max-[1026px]:pb-[70px] max-[769px]:pt-[80px] max-[769px]:pb-[80px] max-[769px]:w-[85%] max-[769px]:mx-auto max-[426px]:gap-[0.875rem] max-[426px]:flex-col max-[426px]:py-[2.5rem]">
                 <div className="flex-1 max-[769px]:flex-none">
                   <h1
-                    className={`2xl:text-[3.7rem]/[4rem] xl:text-[3rem]/[4rem] lg:text-[2rem]/[3rem] max-[1024px]:text-[1.5rem] max-[769px]:text-[1.75rem] max-[769px]:w-[250px] max-[426px]:text-[1rem] tracking-wider 2xl:w-[780px] max-[1025px]:w-4/5 max-[1441px]:w-full max-[426px]:w-full ${calSans.className}`}
+                    className={`2xl:text-[3.7rem]/[4rem] xl:text-[3rem]/[4rem] lg:text-[2rem]/[3rem] max-[1024px]:text-[1.5rem] max-[769px]:text-[1.75rem] max-[769px]:w-[250px] max-[426px]:text-[1rem] tracking-wider 2xl:w-[780px] max-[1025px]:w-4/5 max-[1441px]:w-full max-[426px]:w-full font-calSans`}
                   >
-                    Let&#39s start creating together
+                    Let&#39;s start creating together
                   </h1>
                 </div>
                 <div className="flex-1 text-center flex justify-center">
@@ -60,44 +52,16 @@ const Footer = () => {
             </div>
             <div className="footer-links-block max-[426px]:mx-auto mt-[22px] max-[769px]:w-[85%] max-[769px]:mx-auto max-[1026px]:w-[85%] max-[1026px]:mx-auto max-[1026px]:mt-[44px] max-[1441px]:w-[85%] max-[1441px]:mx-auto max-[1441px]:mt-[58.58px] min-[1536px]:w-[90%] min-[1536px]:mx-auto max-[426px]:w-9/10 max-[426px]:mt-[22px]">
               <div className="footer-link-block first justify-between max-[1026px]:justify-start max-[1026px]:gap-[64px] max-[769px]:justify-start max-[769px]:gap-[46px] max-[426px]:justify-start max-[426px]:gap-[46px] gap-[36px]">
-                <div>
-                  <Image
-                    className="max-[769px]:w-[4rem] max-[426px]:w-[3rem]"
-                    src={logo}
-                    alt=""
-                  />
+                <div className="flex justify-center items-center">
+                  <XVSlogo className="scale-[1.5]" />
                 </div>
-                <div className="gap-x-[8px] gap-y-[6px] grid grid-cols-3 max-[426px]:gap-[0.4rem] max-[426px]:w-auto">
-                  <Image
-                    className="max-[426px]:w-[0.65rem] max-[769px]:w-[0.75rem]"
-                    src={icon1}
-                    alt=""
-                  />
-                  <Image
-                    className="max-[426px]:w-[0.65rem] max-[769px]:w-[0.75rem]"
-                    src={icon2}
-                    alt=""
-                  />
-                  <Image
-                    className="max-[426px]:w-[0.65rem] max-[769px]:w-[0.75rem]"
-                    src={icon3}
-                    alt=""
-                  />
-                  <Image
-                    className="max-[426px]:w-[0.65rem] max-[769px]:w-[0.75rem]"
-                    src={icon4}
-                    alt=""
-                  />
-                  <Image
-                    className="max-[426px]:w-[0.65rem] max-[769px]:w-[0.75rem]"
-                    src={icon5}
-                    alt=""
-                  />
-                  <Image
-                    className="max-[426px]:w-[0.65rem] max-[769px]:w-[0.75rem]"
-                    src={icon6}
-                    alt=""
-                  />
+                <div className="gap-x-[12px] gap-y-[10px] grid grid-cols-3 max-[426px]:gap-[0.4rem] max-[426px]:w-auto">
+                  <Behance />
+                  <Instagram />
+                  <Dribbble />
+                  <Facebook />
+                  <LinkedIn />
+                  <Twitter />
                 </div>
               </div>
               <div className="footer-link-block second flex-[0.65] max-[1906px]:flex max-[1906px]:justify-center max-[1441px]:flex max-[1441px]:justify-center max-[426px]:justify-end">
@@ -113,7 +77,7 @@ const Footer = () => {
                   </p>
                   <div className="flex gap-[32px] mt-[72px] max-[1441px]:mt-auto max-[1026px]:mt-[52px] max-[769px]:gap-[44px] max-[769px]:mt-[22px] max-[426px]:flex-col max-[426px]:mt-[22px] max-[426px]:gap-0">
                     <h1
-                      className={`text-[53px] max-[769px]:text-[1.875rem] max-[426px]:text-[1.2rem] ${calSans.className}`}
+                      className={`text-[53px] max-[769px]:text-[1.875rem] max-[426px]:text-[1.2rem] font-calSans`}
                     >
                       Say Hi!
                     </h1>

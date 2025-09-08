@@ -5,6 +5,7 @@ import HomePageHeading from '@/Sections/HomePageHeading'
 import HomePageReel from '@/Sections/HomePageReel'
 import HomePageServies from '@/Sections/HomePageServies'
 import HomePageStats from '@/Sections/HomePageStats'
+import HomePageTestimonials from '@/Sections/HomePageTestimonials'
 import React from 'react'
 
 const HomePage = () => {
@@ -16,6 +17,7 @@ const HomePage = () => {
         <HomePageReel />
         <HomePageStats />
         <HomePageServies />
+        <HomePageTestimonials />
     </main>
   )
 }

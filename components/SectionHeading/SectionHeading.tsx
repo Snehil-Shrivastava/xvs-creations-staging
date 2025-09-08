@@ -18,7 +18,7 @@ const SectionHeading = ({
         className={`min-[2560px]:text-[12rem]/[12vh] min-[1905px]:text-[9.5rem]/[13vh] min-[1440px]:text-[7.5rem]/[12vh] min-[1024px]:text-[8rem]/[8.5rem] max-[1024px]:text-[5.6rem]/[12vh] max-[769px]:text-[4.8rem]/[5.8rem] max-[426px]:text-[3.375rem] max-[426px]:leading-none font-bold text-center font-apercu-black select-none`}
         style={{
           maskImage:
-            "linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.001) 90%)",
+            "linear-gradient(to bottom, rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0) 75% 90%)",
         }}
       >
         {heading.split("").map((word, index) => (

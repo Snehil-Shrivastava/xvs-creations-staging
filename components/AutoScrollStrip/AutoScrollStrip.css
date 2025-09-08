@@ -1,0 +1,19 @@
+.marquee-container {
+    display: flex;
+    width: max-content;
+    align-items: center;
+    animation: scrollMarquee 15s linear infinite;
+}
+
+.marquee-container:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scrollMarquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}

@@ -46,7 +46,9 @@ const AutoScrollStrip = () => {
         <div className='marquee-container'>
           {allLogos.map((item, index) => (
             // <Image key={index} src={item.logo} alt="image1" className="inline-block mx-[40px] max-sm:mx-[20px] max-[1024px]:w-[90px] max-[426px]:w-[40px]" />
-            item.logo
+            <div key={index}>
+            {item.logo}
+            </div>
           ))}
         </div>
     </div>

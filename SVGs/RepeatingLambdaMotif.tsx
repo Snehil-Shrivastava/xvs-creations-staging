@@ -1,6 +1,3 @@
-// MotifSVG.tsx
-
-// We pass `className` as a prop so we can style the two SVG layers differently.
 const RepeatingLambdaMotif = ({ className }: { className?: string }) => {
   return (
     <svg width="100%" height="800px" className={className}>

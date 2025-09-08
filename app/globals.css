@@ -14,7 +14,10 @@
   --font-mono: var(--font-geist-mono);
   --font-calSans: var(--font-calSans);
   --font-poppins: var(--font-poppins);
-  --font-apercu-black: var(--font-apercu-black)
+  --font-apercu-black: var(--font-apercu-black);
+  --font-apercu-bold: var(--font-apercu-bold);
+  --font-apercu-regular: var(--font-apercu-regular);
+  --font-apercu-itallic: var(--font-apercu-itallic)
 }
 
 body {

@@ -3,8 +3,9 @@ import Image from 'next/image';
 import HomeSpinningLambda from '@/public/Gifs/HomeSpinningLambda.gif'
 
 const HomePageHeading = () => {
+
   return (
-    <header className="relative pointer-events-none mx-auto z-[66]">
+    <header className={`relative pointer-events-none mx-auto z-[66]`}>
       <p className="max-sm:text-[0.75rem] sm:max-lg:text-[0.875rem] lg:max-xl:text-[1rem] xl:max-2xl:text-[1.2rem] min-[1536px]:max-[1905px]:text-[1.5rem] min-[1905px]:text-[1.8rem] font-light inline absolute left-1/4">
         Creating Unforgettable Design
       </p>

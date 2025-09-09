@@ -1,5 +1,5 @@
 import PeopleStatSVG from "@/SVGs/PeopleStatSVG";
-import ProjectStatSVG from "@/SVGs/ProjectStatSVG";
+import ProjectStatSVG from "@/public/images/ProjectStatSVG.svg";
 import RatingStatSVG from "@/SVGs/RatingStatSVG";
 import YearsStatSVG from "@/SVGs/YearsStatSVG";
 
@@ -11,7 +11,7 @@ export const CardsData = [
         cardText1: 'meaningful impact on businesses',
         cardText2: 'with our design projects',
         descriptor: '',
-        SVGIcon: <ProjectStatSVG className="absolute top-[15%] right-[10%] scale-110" />
+        SVGIcon: ProjectStatSVG
     },
     {
         id: 2,

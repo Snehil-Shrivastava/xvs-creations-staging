@@ -8,6 +8,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { CardsData } from "@/data/HomePageStatData";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -154,7 +155,7 @@ const HoverGlowStatCard = () => {
                   )}
                 </div>
                 <div>
-                  {card.SVGIcon}
+                  {card.id === 1 ? <Image src={card.SVGIcon} alt="Icon" className="absolute top-[15%] right-[10%] scale-110" /> : card.SVGIcon}
                 </div>
               </div>
             </div>

@@ -97,8 +97,9 @@
   filter: blur(2px);
 }
 
-.swiper-slide {
+.swiper-slide:not(.swiper-slide-active) {
   /* opacity: 0; */
+  filter: blur(5px);
 }
 
 .swiper-slide-active,

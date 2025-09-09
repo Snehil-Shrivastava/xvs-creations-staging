@@ -155,7 +155,7 @@ const HoverGlowStatCard = () => {
                   )}
                 </div>
                 <div>
-                  {card.id === 1 ? <Image src={card.SVGIcon} alt="Icon" className="absolute top-[15%] right-[10%] scale-110" /> : card.SVGIcon}
+                  {card.id === 1 ? <Image src={card.SVGIcon} alt="Icon" className="absolute top-[10%] right-[5%] scale-90" /> : card.SVGIcon}
                 </div>
               </div>
             </div>

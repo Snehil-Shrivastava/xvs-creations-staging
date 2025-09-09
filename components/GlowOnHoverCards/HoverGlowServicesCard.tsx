@@ -51,8 +51,8 @@ const HoverGlowServicesCard = ({
   }, []);
 
   return (
-    <div className={`${styles.bodyContainer}`}>
-      <div id="cards" className={`${styles.cards} relative`} ref={cardsContainerRef}>
+    <div className={`${styles.bodyContainer} body-container`}>
+      <div id="cards" className={`${styles.cards} relative cards-container`} ref={cardsContainerRef}>
         <div
           key={index}
           className={`${styles.cardShadowContainer} relative h-full backdrop-blur-sm`}
@@ -78,7 +78,7 @@ const HoverGlowServicesCard = ({
             {card.cardDesc}
           </p>
         </div>
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-[40%] pointer-events-none">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-[40%] pointer-events-none gif-container">
           <div className="">
             {card.id === 1 ? (
               <Image

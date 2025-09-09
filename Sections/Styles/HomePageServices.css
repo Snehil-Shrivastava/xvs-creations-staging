@@ -107,3 +107,23 @@
 .swiper-slide-prev {
   opacity: 1;
 }
+/* 
+.swiper-slide-prev {
+  .body-container {
+    .cards-container {
+      .gif-container {
+        display: none;
+      }
+    }
+  }
+} */
+
+.swiper-slide:not(.swiper-slide-active) {
+  .body-container {
+    .cards-container {
+      .gif-container {
+        visibility: hidden;
+      }
+    }
+  }
+}

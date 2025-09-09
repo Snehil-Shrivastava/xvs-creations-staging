@@ -1,5 +1,5 @@
 import PeopleStatSVG from "@/SVGs/PeopleStatSVG";
-import ProjectStatSVG from "@/public/images/ProjectStatSVG.svg";
+import ProjectStatSVG from "@/public/images/layer.svg";
 import RatingStatSVG from "@/SVGs/RatingStatSVG";
 import YearsStatSVG from "@/SVGs/YearsStatSVG";
 

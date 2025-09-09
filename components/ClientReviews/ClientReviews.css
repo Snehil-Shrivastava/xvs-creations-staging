@@ -1,0 +1,39 @@
+.review-box {
+  background: #f3eddeeb;
+  border-right: 1px solid rgba(250, 250, 250, 0.1);
+
+  clip-path: polygon(
+    0% 32px,
+    0% 100%,
+    calc(100% - 32px) 100%,
+    100% calc(100% - 32px),
+    100% 0%,
+    32px 0%
+  );
+}
+
+.client-banner {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  filter: grayscale(100%);
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.102);
+}
+
+@media screen and (max-width: 426px) {
+  .review-box {
+    clip-path: polygon(
+      0% 12px,
+      0% 100%,
+      calc(100% - 12px) 100%,
+      100% calc(100% - 12px),
+      100% 0%,
+      12px 0%
+    );
+  }
+
+  .client-banner {
+    row-gap: 28px;
+    column-gap: 20px;
+  }
+}

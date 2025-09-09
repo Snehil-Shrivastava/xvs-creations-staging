@@ -44,9 +44,17 @@ const AboutPageRichText = () => {
             .timeline({
               scrollTrigger: {
                 trigger: containerRef.current,
-                // markers: true,
-                start: "top 30%",
-                end: "bottom 15%",
+                markers: true,
+              start: () => {
+                const triggerElement = containerRef.current;
+                // @ts-expect-error random
+                return "top top+=" + (triggerElement.offsetHeight + 50);
+              },
+              end: () => {
+                const triggerElement = containerRef.current;
+                // @ts-expect-error random
+                return "bottom top+=" + (triggerElement.offsetHeight + 50);
+              },
                 scrub: true,
                 // pin: svgRef.current, // Pin the SVG while animating
                 anticipatePin: 1,
@@ -69,7 +77,7 @@ const AboutPageRichText = () => {
   );
 
   return (
-    <div ref={mainContainerRef} className="h-[1100px]">
+    <div ref={mainContainerRef} className="h-[150vh] pointer-events-none">
       <div
         style={{
           height: "calc(50%)",
@@ -77,7 +85,7 @@ const AboutPageRichText = () => {
       >
         <div
           ref={containerRef}
-          className={`relative left-1/2 -translate-x-1/2 top-10 pointer-events-none max-sm:h-24 max-sm:w-21 sm:max-lg:w-29 sm:max-lg:h-33.75 lg:max-2xl:w-51 lg:max-2xl:h-59.25 min-[1536px]:max-[1906px]:w-80 min-[1536px]:max-[1906px]:h-100 min-[1906px]:w-110 min-[1906px]:h-130`}
+          className={`relative left-1/2 -translate-x-1/2 top-10 pointer-events-none max-sm:h-24 max-sm:w-21 sm:max-lg:w-29 sm:max-lg:h-33.75 lg:max-2xl:w-51 lg:max-2xl:h-59.25 min-[1536px]:max-[1906px]:w-80 min-[1536px]:max-[1906px]:h-100 min-[1906px]:w-110 min-[1906px]:h-130 z-[65]`}
         >
           <div
             className="absolute inset-0 rounded-full bg-[rgba(196,102,8,0.06)]"

@@ -5,7 +5,7 @@ const Page = () => {
   return (
     <>
         <GridSVG />
-        <div className='relative top-40 w-4/5 mx-auto '>
+        <div className='relative top-40 w-4/5 mx-auto'>
             <AboutPage />
         </div>
     </>

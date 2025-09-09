@@ -8,7 +8,7 @@ import useWindowWidth from "@/hooks/windowWidth";
 const GridSVG = () => {
   const width = useWindowWidth()
   // Define grid dimensions
-  const gridSize = 35; // For a 10x10 grid
+  const gridSize = 25; // For a 10x10 grid
   const svgViewBoxSize = width; // A fixed viewBox size for consistent cell sizing
   const cellSize = svgViewBoxSize / gridSize;
 

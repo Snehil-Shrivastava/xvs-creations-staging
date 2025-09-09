@@ -44,7 +44,7 @@ const AboutPageRichText = () => {
             .timeline({
               scrollTrigger: {
                 trigger: containerRef.current,
-                markers: true,
+                // markers: true,
               start: () => {
                 const triggerElement = containerRef.current;
                 // @ts-expect-error random

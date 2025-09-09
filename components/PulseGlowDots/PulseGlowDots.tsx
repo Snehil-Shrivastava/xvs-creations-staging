@@ -4,10 +4,7 @@ const PulseGlowDots = () => {
   return (
     <div
         className="absolute inset-0 z-[15]"
-        style={{
-          maskImage:
-            "radial-gradient(920px circle at center, #000000, transparent)",
-        }}
+
       >
         <div className="glow-dot-1 blur-xs"></div>
         <div className="glow-dot-2 blur-xs"></div>

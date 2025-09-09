@@ -23,7 +23,7 @@ const ContactPage = () => {
         className="absolute inset-0 z-10 pointer-events-none"
         style={{
           background: "#282828",
-          maskImage: "radial-gradient(920px, rgb(0, 0, 0), transparent)",
+          maskImage: "radial-gradient(920px, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))",
         }}
       />
       <PulseGlowDots />

@@ -5,17 +5,19 @@ const SectionHeading = ({
   heading,
   btnHeading,
   btnIcon,
+  style
 }: {
   className?: string;
   heading: string;
   btnHeading: string;
   btnIcon: JSX.Element;
+  style?: string
 }) => {
   const lastIndex = heading.length - 1;
   return (
     <div className={`relative ${className}`}>
       <h1
-        className={`min-[2560px]:text-[12rem]/[12vh] min-[1905px]:text-[9.5rem]/[13vh] min-[1440px]:text-[7.5rem]/[12vh] min-[1024px]:text-[10rem]/[8.5rem] max-[1024px]:text-[5.6rem]/[12vh] max-[769px]:text-[4.8rem]/[5.8rem] max-[426px]:text-[3.375rem] max-[426px]:leading-none font-bold text-center font-apercu-black select-none`}
+        className={`max-[426px]:leading-none font-bold text-center font-apercu-black select-none ${style ? style : 'text-[10rem]/[8.5rem]'}`}
         style={{
           maskImage:
             "linear-gradient(to bottom, rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0) 75% 90%)",

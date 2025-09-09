@@ -54,7 +54,7 @@ export default function RootLayout({
         <ModalProvider>
           <Navbar />
           {children}
-          <Footer />
+          {/* <Footer /> */}
         </ModalProvider>
       </body>
     </html>

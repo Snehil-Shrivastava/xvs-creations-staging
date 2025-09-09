@@ -10,7 +10,11 @@ const ClientReviews = () => {
     <div className="py-[98px] mt-[64px] review-box max-[1025px]:py-[64px] max-[769px]:py-[48px] max-[426px]:py-[22px] min-[1906px]:w-7/10 min-[1906px]:mx-auto max-[769px]:w-19/20 max-[769px]:mx-auto">
       <div className="w-[80%] mx-auto max-[426px]:w-[85%]">
         <div className="client-banner pb-[88px] select-none max-[1906px]:gap-15 max-[1441px]:gap-[56px] max-[1025px]:gap-[32px] max-[1025px]:pb-[40px] max-[769px]:pb-[48px] max-[769px]:gap-[32px] max-[426px]:pb-[32px]">
-          {clientLogo.map((logo) => logo.logo)}
+          {clientLogo.map((logo) => (
+            <div key={logo.id}>
+                {logo.logo}
+            </div>
+          ))}
         </div>
         <div className="mt-[48px] max-[1025px]:mt-[28px] max-[769px]:mt-[32px] max-[426px]:mt-[22px]">
           <div className="flex gap-[22px] justify-center select-none">

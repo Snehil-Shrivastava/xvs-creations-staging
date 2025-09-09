@@ -16,56 +16,35 @@ const AboutPageRichText = () => {
 
   useGSAP(
     () => {
-      const mm = gsap.matchMedia();
+      // @ts-expect-error random
+      const targetRect = richTxtRef.current.getBoundingClientRect();
+      // @ts-expect-error random
+      const svgRect = svgRef.current.getBoundingClientRect();
 
-      mm.add(
-        {
-          isMobile: "(max-width: 426px)",
-          isTablet: "(min-width: 426px) and (max-width: 769px)",
-          isDesktopsm: "(min-width: 769px) and (max-width: 1025px)",
-          isDesktopmd: "(min-width: 1025px) and (max-width: 1441px)",
-          isDesktoplg: "(min-width: 1441px) and (max-width: 2561px)",
-        },
-        (context) => {
-          // @ts-expect-error random
-          const { isMobile, isTablet, isMobilesm } = context.conditions;
+      const yDelta = targetRect.top - svgRect.top;
+      const xDelta = targetRect.left - svgRect.left;
+      const scale = targetRect.width / svgRect.width;
 
-          const finalScale = isTablet ? 0.9 : isMobile ? 0.8 : 0.6; // Define final scale for calculation
-          const finalX = isMobile ? -30 : isTablet ? -60 : -70;
-
-          // @ts-expect-error random
-          const targetRect = richTxtRef.current.getBoundingClientRect();
-          // @ts-expect-error random
-          const svgRect = svgRef.current.getBoundingClientRect();
-
-          const yDelta = targetRect.top - svgRect.top;
-
-          gsap
-            .timeline({
-              scrollTrigger: {
-                trigger: containerRef.current,
-                // markers: true,
-                start: "top 30%",
-                end: "bottom 15%",
-                scrub: true,
-                // pin: svgRef.current, // Pin the SVG while animating
-                anticipatePin: 1,
-              },
-            })
-            .to(svgRef.current, {
-              x: finalX,
-              y: yDelta,
-              scale: finalScale,
-              ease: "none",
-            });
-        }
-      );
-
-      // The useGSAP hook provides a cleanup function in its return,
-      // so we can revert the matchMedia instance here for safety.
-      return () => mm.revert();
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: containerRef.current,
+            markers: true,
+            start: "top top",
+            end: "bottom top",
+            scrub: true,
+            // pin: svgRef.current, // Pin the SVG while animating
+            anticipatePin: 1,
+          },
+        })
+        .to(svgRef.current, {
+          x: -70,
+          y: yDelta,
+          scale: 0.6,
+          ease: "none",
+        });
     },
-    { scope: mainContainerRef }
+    { dependencies: [] }
   );
 
   return (

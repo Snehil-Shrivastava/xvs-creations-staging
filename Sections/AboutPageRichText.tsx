@@ -40,21 +40,39 @@ const AboutPageRichText = () => {
 
           const yDelta = targetRect.top - svgRect.top;
 
+          gsap.to(smallSvgRef.current, {
+            scrollTrigger: {
+              trigger: smallSvgRef.current,
+                start: () => {
+                  const triggerElement = containerRef.current;
+                  // @ts-expect-error random
+                  return "top top+=" + (triggerElement.offsetHeight + 50);
+                },
+                end: () => {
+                  const triggerElement = containerRef.current;
+                  // @ts-expect-error random
+                  return "bottom top+=" + (triggerElement.offsetHeight + 50);
+                },
+              scrub: 1,
+            },
+            scale: 0,
+          });
+
           gsap
             .timeline({
               scrollTrigger: {
                 trigger: containerRef.current,
                 // markers: true,
-              start: () => {
-                const triggerElement = containerRef.current;
-                // @ts-expect-error random
-                return "top top+=" + (triggerElement.offsetHeight + 50);
-              },
-              end: () => {
-                const triggerElement = containerRef.current;
-                // @ts-expect-error random
-                return "bottom top+=" + (triggerElement.offsetHeight + 50);
-              },
+                start: () => {
+                  const triggerElement = containerRef.current;
+                  // @ts-expect-error random
+                  return "top top+=" + (triggerElement.offsetHeight + 50);
+                },
+                end: () => {
+                  const triggerElement = containerRef.current;
+                  // @ts-expect-error random
+                  return "bottom top+=" + (triggerElement.offsetHeight + 50);
+                },
                 scrub: true,
                 // pin: svgRef.current, // Pin the SVG while animating
                 anticipatePin: 1,
@@ -384,7 +402,7 @@ const AboutPageRichText = () => {
             fill="#F3EDDE"
           />
         </svg>
-        <p className="font-light text-center w-4/5 mx-auto text-[#F3EDDE] text-[1.25rem]/[2.5rem] xl:max-2xl:mt-20">
+        <p className="font-light text-center xl:max-1440p:w-4/5 mx-auto text-[#F3EDDE] xl:max-1440p:text-[1.25rem]/[2.5rem] xl:max-1440p:mt-20">
           With the inspiration of designing we started back in 2014 and bringing
           them to reality since then. From cosmetic startups to big automotive
           companies we had fun working at different scales and industries. We

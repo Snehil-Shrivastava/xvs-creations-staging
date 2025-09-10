@@ -6,7 +6,7 @@ const FooterBtnSVG = () => {
       height="33"
       viewBox="0 0 33 33"
       fill="none"
-      className="w-[21px] h-[21px] md:max-lg:w-8 md:max-lg:h-8 min-[1348px]:max-2xl:w-10 min-[1348px]:max-2xl:h-10"
+      className="xl:max-1440p:w-10 xl:max-1440p:h-10"
     >
       <path
         fillRule="evenodd"

@@ -9,7 +9,7 @@ import sendIcon from '@/public/images/send-icon.png'
 
 const ContactPageForm = () => {
   return (
-    <div className="max-[769px]:w-[90%] max-[1281px]:w-[85%] w-[85%] 2xl:w-1/2 mx-auto relative top-50 z-[65] pb-60">
+    <div className="max-[769px]:w-[90%] max-[1281px]:w-[85%] w-[85%] 2xl:w-1/2 mx-auto relative top-37.5 z-[65] pb-60">
       <div
         className="w-full h-full relative bg-neutral-50/20 backdrop-blur-xs"
         style={{

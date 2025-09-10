@@ -6,7 +6,7 @@ const XVSlogo = ({className}: {className?: string}) => {
       height="58"
       viewBox="0 0 60 58"
       fill="none"
-      className={`${className} w-[29px] h-full sm:max-lg:w-12 lg:max-2xl:w-15 min-[1536px]:max-[1905px]:w-15 min-[1905px]:w-18`}
+      className={`${className} h-full xl:max-1440p:w-20`}
     >
       <g clipPath="url(#clip0_2340_539)">
         <path

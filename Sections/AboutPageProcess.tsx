@@ -20,7 +20,7 @@ const AboutPageProcess = () => {
           <HoverGlowProcessCard key={index} card={card} />
         ))}
       </div>
-      <p className="text-[20px] font-light mt-[66px] max-2xl:w-9/10 max-xl:w-[90%] max-lg:w-[80%] mx-auto max-[1025px]:text-[1rem] max-[769px]:w-[90%] max-[769px]:text-[0.75rem] max-[426px]:text-[0.5rem] max-[426px]:mt-[40px] max-[1906px]:w-7/10 min-[1906px]:text-[1.5rem] min-[1906px]:w-1/2 text-[#F3EDDE] text-center">
+      <p className="xl:max-1440p:text-[20px] font-light xl:max-1440p:mt-[66px] xl:max-1440p:w-9/10 mx-auto text-[#F3EDDE] text-center">
         At xVS we design using tools but it&#39;s more than that, it&#39;s the
         aspiration of all who come together to make inspiration a reality.
       </p>

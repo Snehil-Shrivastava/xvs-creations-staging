@@ -17,7 +17,7 @@ const SectionHeading = ({
   return (
     <div className={`relative ${className}`}>
       <h1
-        className={`max-[426px]:leading-none font-bold text-center font-apercu-black select-none ${style ? style : 'text-[10rem]/[8.5rem]'}`}
+        className={`max-[426px]:leading-none font-bold text-center font-apercu-black select-none ${style ? style : 'xl:max-1440p:text-[9rem]/[8.5rem]'}`}
         style={{
           maskImage:
             "linear-gradient(to bottom, rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0) 75% 90%)",
@@ -29,7 +29,7 @@ const SectionHeading = ({
             className={`${
               index == lastIndex
                 ? ""
-                : "max-[769px]:mr-[2rem] max-[1025px]:mr-[2.2rem] min-[1025px]:max-[1281px]:mr-[3rem] min-[1281px]:max-[1349px]:mr-[2.8rem]"
+                : "xl:max-2xl:mr-[2.8rem]"
             }`}
           >
             {word}

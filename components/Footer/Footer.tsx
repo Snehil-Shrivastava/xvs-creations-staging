@@ -33,13 +33,13 @@ const Footer = () => {
               <div className="flex gap-[48px] items-center justify-between pt-[111px] pb-[150px] min-[1536px]:w-[90%] min-[1536px]:mx-auto max-[1441px]:w-[85%] max-[1441px]:mx-auto max-[1441px]:pb-[70px] max-[1026px]:w-[85%] max-[1026px]:mx-auto max-[1026px]:pb-[70px] max-[769px]:pt-[80px] max-[769px]:pb-[80px] max-[769px]:w-[85%] max-[769px]:mx-auto max-[426px]:gap-[0.875rem] max-[426px]:flex-col max-[426px]:py-[2.5rem]">
                 <div className="flex-1 max-[769px]:flex-none">
                   <h1
-                    className={`2xl:text-[3.7rem]/[4rem] xl:text-[3rem]/[4rem] lg:text-[2rem]/[3rem] max-[1024px]:text-[1.5rem] max-[769px]:text-[1.75rem] max-[769px]:w-[250px] max-[426px]:text-[1rem] tracking-wider 2xl:w-[780px] max-[1025px]:w-4/5 max-[1441px]:w-full max-[426px]:w-full font-calSans`}
+                    className={`xl:max-1440p:text-[3rem]/[4rem] tracking-wider xl:max-1440p:w-full font-calSans`}
                   >
                     Let&#39;s start creating together
                   </h1>
                 </div>
                 <div className="flex-1 text-center flex justify-center">
-                  <Link href='/' className="flex gap-2 items-center text-nowrap bg-[#F79839] rounded-4xl px-3.5 py-2.5 min-[1348px]:max-2xl:px-5 min-[1348px]:max-2xl:py-4 min-[1348px]:max-2xl:rounded-[48px] text-[0.625rem] md:max-lg:text-base min-[1348px]:max-2xl:text-2xl min-[1348px]:max-2xl:gap-4 font-semibold">
+                  <Link href='/' className="flex items-center text-nowrap bg-[#F79839] xl:max-1440p:px-5 xl:max-1440p:py-4 xl:max-1440p:rounded-[48px] xl:max-1440p:text-2xl xl:max-1440p:gap-4 font-semibold">
                     <div>
                       <FooterBtnSVG />
                     </div>
@@ -53,42 +53,42 @@ const Footer = () => {
             <div className="footer-links-block max-[426px]:mx-auto mt-[22px] max-[769px]:w-[85%] max-[769px]:mx-auto max-[1026px]:w-[85%] max-[1026px]:mx-auto max-[1026px]:mt-[44px] max-[1441px]:w-[85%] max-[1441px]:mx-auto max-[1441px]:mt-[58.58px] min-[1536px]:w-[90%] min-[1536px]:mx-auto max-[426px]:w-9/10 max-[426px]:mt-[22px]">
               <div className="footer-link-block first justify-between max-[1026px]:justify-start max-[1026px]:gap-[64px] max-[769px]:justify-start max-[769px]:gap-[46px] max-[426px]:justify-start max-[426px]:gap-[46px] gap-[36px]">
                 <div className="flex justify-center items-center">
-                  <XVSlogo className="scale-[1.5]" />
+                  <XVSlogo className="" />
                 </div>
                 <div className="gap-x-[12px] gap-y-[10px] grid grid-cols-3 max-[426px]:gap-[0.4rem] max-[426px]:w-auto">
-                  <Behance />
-                  <Instagram />
-                  <Dribbble />
-                  <Facebook />
-                  <LinkedIn />
-                  <Twitter />
+                  <Behance fill="#ffffff" />
+                  <Instagram fill="#ffffff" />
+                  <Dribbble fill="#ffffff" />
+                  <Facebook fill="#ffffff" />
+                  <LinkedIn fill="#ffffff" />
+                  <Twitter fill="#ffffff" />
                 </div>
               </div>
               <div className="footer-link-block second flex-[0.65] max-[1906px]:flex max-[1906px]:justify-center max-[1441px]:flex max-[1441px]:justify-center max-[426px]:justify-end">
                 <div className="max-[1025px]:mx-auto max-[1441px]:flex max-[1441px]:flex-col max-[1441px]:h-full max-[426px]:w-[80%] max-[769px]:w-auto max-[1026px]:w-[80%] max-[769px]:mx-0">
-                  <h1 className="font-semibold text-[18px] pb-[26px] max-[769px]:text-[0.625rem] max-[426px]:text-[0.5rem]">
+                  <h1 className="font-semibold xl:max-1440p:text-[18px] xl:max-1440p:pb-[26px]">
                     Contacts
                   </h1>
-                  <p className="text-[14px] max-[1024px]:text-[0.75rem]/[1.5rem] max-[769px]:text-[0.5rem]/[1rem] max-[426px]:text-[7px]/[1rem] max-[1441px]:font-extralight">
+                  <p className="xl:max-1440p:text-[14px] xl:max-1440p:font-extralight">
                     2nd Floor, 1/23 Rajni Khand, Sharda Nagar,
                   </p>
-                  <p className="text-[14px] max-[1024px]:text-[0.75rem]/[1.5rem] max-[769px]:text-[0.5rem]/[1rem] max-[426px]:text-[7px]/[1rem] max-[1441px]:font-extralight">
+                  <p className="xl:max-1440p:text-[14px] xl:max-1440p:font-extralight">
                     Lucknow, UP (226002), India.
                   </p>
                   <div className="flex gap-[32px] mt-[72px] max-[1441px]:mt-auto max-[1026px]:mt-[52px] max-[769px]:gap-[44px] max-[769px]:mt-[22px] max-[426px]:flex-col max-[426px]:mt-[22px] max-[426px]:gap-0">
                     <h1
-                      className={`text-[53px] max-[769px]:text-[1.875rem] max-[426px]:text-[1.2rem] font-calSans`}
+                      className={`xl:max-1440p:text-[53px] font-calSans`}
                     >
                       Say Hi!
                     </h1>
                     <div className="flex flex-col justify-center">
                       <a
                         href=""
-                        className="hover:underline text-[14px] max-[1024px]:text-[0.75rem] max-[769px]:text-[0.5rem] max-[1441px]:font-extralight max-[426px]:text-[7px]/[1rem]"
+                        className="hover:underline xl:max-1440p:text-[14px] xl:max-1440p:font-extralight"
                       >
                         info@xvscreations.com
                       </a>
-                      <p className=" text-[14px] max-[1024px]:text-[0.75rem] max-[769px]:text-[0.5rem] max-[1441px]:font-extralight max-[426px]:text-[7px]/[1rem] max-[426px]:leading-[6px]">
+                      <p className="xl:max-1440p:text-[14px] xl:max-1440p:font-extralight">
                         +91-8726899713
                       </p>
                     </div>
@@ -96,10 +96,10 @@ const Footer = () => {
                 </div>
               </div>
               <div className="footer-link-block third flex-[0.2]">
-                <h1 className="font-semibold text-[18px] pb-[26px] max-[769px]:text-[0.625rem] max-[426px]:text-[0.5rem]">
+                <h1 className="font-semibold xl:max-1440p:text-[18px] xl:max-1440p:pb-[26px]">
                   Services
                 </h1>
-                <div className="flex flex-col gap-[8px] text-[14px] max-[769px]:text-[0.5rem] max-[769px]:font-extralight max-[426px]:text-[0.5rem]">
+                <div className="flex flex-col xl:max-1440p:gap-[8px] xl:max-1440p:text-[14px]">
                   <Link href="/" className="hover:underline">
                     Branding
                   </Link>

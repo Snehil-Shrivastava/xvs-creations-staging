@@ -7,9 +7,9 @@ import ClutchReview from "@/SVGs/ClutchReview";
 
 const ClientReviews = () => {
   return (
-    <div className="py-[98px] mt-[64px] review-box max-[1025px]:py-[64px] max-[769px]:py-[48px] max-[426px]:py-[22px] min-[1906px]:w-7/10 min-[1906px]:mx-auto max-[769px]:w-19/20 max-[769px]:mx-auto">
-      <div className="w-[80%] mx-auto max-[426px]:w-[85%]">
-        <div className="client-banner pb-[88px] select-none max-[1906px]:gap-15 max-[1441px]:gap-[56px] max-[1025px]:gap-[32px] max-[1025px]:pb-[40px] max-[769px]:pb-[48px] max-[769px]:gap-[32px] max-[426px]:pb-[32px]">
+    <div className="xl:max-1440p:py-[80px] mt-[64px] review-box min-[1906px]:mx-auto max-[769px]:w-19/20 max-[769px]:mx-auto">
+      <div className="xl:max-1440p:w-[85%] mx-auto">
+        <div className="client-banner xl:max-1440p:pb-[64px] select-none xl:max-1440p:gap-x-[42px] xl:max-1440p:gap-y-[28px]">
           {clientLogo.map((logo) => (
             <div key={logo.id}>
                 {logo.logo}
@@ -21,7 +21,7 @@ const ClientReviews = () => {
             <ClutchReview />
             <ClutchReview />
           </div>
-          <div className="flex mt-[88px] text-left gap-[32px] justify-between max-[1025px]:mt-[44px] max-[769px]:mt-[32px] max-[426px]:gap-[12px] text-black">
+          <div className="flex xl:max-1440p:mt-[64px] text-left gap-[32px] justify-between text-black">
             {clientReviews.map((client, index) => (
               <div key={index} className="w-[320px]">
                 <h3 className="font-bold tracking-wider max-[1025px]:text-[0.75rem] max-[769px]:text-[0.5rem] max-[426px]:text-[6px] text-[0.875rem]">

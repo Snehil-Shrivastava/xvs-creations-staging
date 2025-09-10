@@ -1,10 +1,10 @@
-import React from "react";
+import './BgVideo.css'
 
-const BgVideo = ({ src }: { src: string }) => {
+const BgVideo = ({ src }: { src?: string }) => {
   return (
-    <video>
-      <source src={src} type="video/mp4" />
-      Your browser does not support HTML5 video.
+    <video className="-scale-x-100 relative" width="100%" height="100%" autoPlay loop muted>
+      <source src={src ? src : '/videos/services.mp4'} type="video/mp4" />
+      Your browser does not support the video tag.
     </video>
   );
 };

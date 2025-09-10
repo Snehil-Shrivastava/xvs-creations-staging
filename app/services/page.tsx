@@ -1,10 +1,8 @@
-import BgVideo from "@/components/BgVideo/BgVideo";
+import ServicesPage from "@/Pages/ServicesPage";
 
 const page = () => {
   return (
-    <div>
-        page
-    </div>
+    <ServicesPage />
   )
 };
 

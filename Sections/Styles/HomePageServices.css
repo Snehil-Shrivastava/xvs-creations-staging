@@ -92,31 +92,9 @@
   }
 }
 
-.swiper-slide-prev,
-.swiper-slide-next {
-  filter: blur(2px);
-}
-
 .swiper-slide:not(.swiper-slide-active) {
-  /* opacity: 0; */
   filter: blur(5px);
 }
-
-.swiper-slide-active,
-.swiper-slide-next,
-.swiper-slide-prev {
-  opacity: 1;
-}
-/* 
-.swiper-slide-prev {
-  .body-container {
-    .cards-container {
-      .gif-container {
-        display: none;
-      }
-    }
-  }
-} */
 
 .swiper-slide:not(.swiper-slide-active) {
   .body-container {

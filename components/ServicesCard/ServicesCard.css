@@ -1,29 +1,14 @@
 /* .card-container::before {
-  content: "";
-  position: absolute;
-  border-bottom: 180px solid transparent;
-  border-right: 180px solid transparent;
-  border-left: 180px solid white;
-  border-top: 180px solid white;
-  top: 0;
-  left: 0;
-  z-index: -50;
-  width: 0;
-  height: 0;
-}
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 60%;
 
-.card-container::after {
-  content: "";
-  position: absolute;
-  border-top: 180px solid transparent;
-  border-left: 180px solid transparent;
-  border-right: 180px solid #f79839;
-  border-bottom: 180px solid #f79839;
-  bottom: 0;
-  right: 0;
-  z-index: -50;
-  width: 0;
-  height: 0;
+    background-color: white;
+
+    z-index: 0;
 } */
 
 .border-top-left {

@@ -109,6 +109,7 @@ const ServicesCard = () => {
                   "polygon(0 0, 0 100%, calc(100% - 96px) 100%, 100% calc(100% - 96px), 100% 0, 0 0)",
               }}
             >
+              
               <div className="">
                 <p className="xl:max-1440p:text-[1.25rem]/[2rem] font-thin xl:max-1440p:w-9/20 ml-auto xl:max-1440p:py-25 xl:max-1440p:pr-20">
                   {card.description}

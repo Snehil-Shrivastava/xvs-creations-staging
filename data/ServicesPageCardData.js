@@ -14,7 +14,7 @@ export const cardsData = [
         ),
         image: (
             <Image
-                className="aspect-auto xl:max-1440p:h-[480px] xl:max-1440p:w-[420px]"
+                className="aspect-auto xl:max-1440p:w-[450px]"
                 src={GraphicDesignImg}
                 alt="image"
             />
@@ -31,7 +31,7 @@ export const cardsData = [
         ),
         image: (
             <Image
-                className="aspect-auto xl:max-1440p:h-[480px] xl:max-1440p:w-[470px]"
+                className="aspect-auto xl:max-1440p:w-[470px]"
                 src={BrandingImg}
                 alt="image"
             />

@@ -1,3 +1,7 @@
+import GraphicDesignImg from "@/public/images/Files 1.png";
+import BrandingImg from '@/public/images/Lemon sliced 1.png'
+import Image from "next/image";
+
 export const cardsData = [
     {
         id: 1,
@@ -7,6 +11,13 @@ export const cardsData = [
             <>
                 Our expert <span className="text-[#F79839] font-semibold"> graphic designers </span> and brand strategists craft powerful visual narratives. Through meticulously designed marketing collateral and print materials, we enhance your brand presence and create meaningful connections with your audience at every touchpoint.
             </>
+        ),
+        image: (
+            <Image
+                className="aspect-auto xl:max-1440p:h-[480px] xl:max-1440p:w-[330px]"
+                src={GraphicDesignImg}
+                alt="image"
+            />
         ),
     },
     {
@@ -18,5 +29,12 @@ export const cardsData = [
                 Our expert <span className="text-[#F79839] font-semibold"> graphic designers </span> and brand strategists craft powerful visual narratives. Through meticulously designed marketing collateral and print materials, we enhance your brand presence and create meaningful connections with your audience at every touchpoint.
             </>
         ),
+        image: (
+            <Image
+                className="aspect-auto xl:max-1440p:h-[480px] xl:max-1440p:w-[470px]"
+                src={BrandingImg}
+                alt="image"
+            />
+        )
     },
 ]

@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import cardImag from "@/public/images/Files 1.png";
 
 import "./ServicesCard.css";
@@ -76,7 +76,7 @@ const ServicesCard = () => {
   return (
     <div ref={mainContainerRef} className="flex flex-col relative">
         
-      {cardData.map((card: { id: number; title: string; subtitle: string; description: JSX.Element }, index: number) => (
+      {cardData.map((card: { id: number; title: string; subtitle: string; description: JSX.Element; image: JSX.Element }, index: number) => (
         <div
           // @ts-expect-error eandom
           ref={(el) =>
@@ -92,11 +92,7 @@ const ServicesCard = () => {
           </h1>
           <div className="bg-[rgba(67,67,67,0.36)] backdrop-blur-sm">
             <div className="absolute origin-bottom bottom-0">
-              <Image
-                className="aspect-auto xl:max-1440p:h-[480px] xl:max-1440p:w-[330px]"
-                src={cardImag}
-                alt="image"
-              />
+              {card.image}
             </div>
             <div>
               <p className="xl:max-1440p:text-[1.25rem] font-extralight xl:max-1440p:w-9/20 ml-auto xl:max-1440p:py-25 xl:max-1440p:pr-20">

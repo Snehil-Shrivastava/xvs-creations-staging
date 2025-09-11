@@ -114,22 +114,22 @@ const NavigationModal = ({
         </div>
       </div>
       <div className="absolute bottom-[5%] right-[4%] flex gap-2 sm:max-lg:gap-4  lg:max-2xl:gap-4 2xl:gap-4.5">
-        <Link href="/">
+        <Link href="https://www.behance.net/xVSCreations" target="_blank">
           <Behance />
         </Link>
-        <Link href="/">
+        <Link href="https://www.instagram.com/xvscreations" target="_blank">
           <Instagram />
         </Link>
-        <Link href="/">
+        <Link href="https://www.dribbble.com/xvscreations" target="_blank">
           <Dribble />
         </Link>
-        <Link href="/">
+        <Link href="https://www.facebook.com/xVSCreations" target="_blank">
           <Facebook />
         </Link>
-        <Link href="/">
+        <Link href="https://www.linkedin.com/company/xvs-creations" target="_blank">
           <LinkedIn />
         </Link>
-        <Link href="/">
+        <Link href="https://x.com/xvscreations" target="_blank">
           <Twitter />
         </Link>
       </div>

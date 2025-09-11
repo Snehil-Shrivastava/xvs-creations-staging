@@ -39,7 +39,10 @@ const Footer = () => {
                   </h1>
                 </div>
                 <div className="flex-1 text-center flex justify-center">
-                  <Link href='/' className="flex items-center text-nowrap bg-[#F79839] xl:max-1440p:px-5 xl:max-1440p:py-4 xl:max-1440p:rounded-[48px] xl:max-1440p:text-2xl xl:max-1440p:gap-4 font-semibold">
+                  <Link
+                    href="/"
+                    className="flex items-center text-nowrap bg-[#F79839] xl:max-1440p:px-5 xl:max-1440p:py-4 xl:max-1440p:rounded-[48px] xl:max-1440p:text-2xl xl:max-1440p:gap-4 font-semibold"
+                  >
                     <div>
                       <FooterBtnSVG />
                     </div>
@@ -56,12 +59,39 @@ const Footer = () => {
                   <XVSlogo className="" />
                 </div>
                 <div className="gap-x-[12px] gap-y-[10px] grid grid-cols-3 max-[426px]:gap-[0.4rem] max-[426px]:w-auto">
-                  <Behance fill="#ffffff" />
-                  <Instagram fill="#ffffff" />
-                  <Dribbble fill="#ffffff" />
-                  <Facebook fill="#ffffff" />
-                  <LinkedIn fill="#ffffff" />
-                  <Twitter fill="#ffffff" />
+                  <Link
+                    href="https://www.behance.net/xVSCreations"
+                    target="_blank"
+                  >
+                    <Behance fill="#ffffff" />
+                  </Link>
+                  <Link
+                    href="https://www.instagram.com/xvscreations"
+                    target="_blank"
+                  >
+                    <Instagram fill="#ffffff" />
+                  </Link>
+                  <Link
+                    href="https://www.dribbble.com/xvscreations"
+                    target="_blank"
+                  >
+                    <Dribbble fill="#ffffff" />
+                  </Link>
+                  <Link
+                    href="https://www.facebook.com/xVSCreations"
+                    target="_blank"
+                  >
+                    <Facebook fill="#ffffff" />
+                  </Link>
+                  <Link
+                    href="https://www.linkedin.com/company/xvs-creations"
+                    target="_blank"
+                  >
+                    <LinkedIn fill="#ffffff" />
+                  </Link>
+                  <Link href="https://x.com/xvscreations" target="_blank">
+                    <Twitter fill="#ffffff" />
+                  </Link>
                 </div>
               </div>
               <div className="footer-link-block second flex-[0.65] max-[1906px]:flex max-[1906px]:justify-center max-[1441px]:flex max-[1441px]:justify-center max-[426px]:justify-end">
@@ -76,18 +106,16 @@ const Footer = () => {
                     Lucknow, UP (226002), India.
                   </p>
                   <div className="flex gap-[32px] mt-[72px] max-[1441px]:mt-auto max-[1026px]:mt-[52px] max-[769px]:gap-[44px] max-[769px]:mt-[22px] max-[426px]:flex-col max-[426px]:mt-[22px] max-[426px]:gap-0">
-                    <h1
-                      className={`xl:max-1440p:text-[53px] font-calSans`}
-                    >
+                    <h1 className={`xl:max-1440p:text-[53px] font-calSans`}>
                       Say Hi!
                     </h1>
                     <div className="flex flex-col justify-center">
-                      <a
-                        href=""
+                      <Link
+                        href="mailto:info@xvscreations.com"
                         className="hover:underline xl:max-1440p:text-[14px] xl:max-1440p:font-extralight"
                       >
                         info@xvscreations.com
-                      </a>
+                      </Link>
                       <p className="xl:max-1440p:text-[14px] xl:max-1440p:font-extralight">
                         +91-8726899713
                       </p>

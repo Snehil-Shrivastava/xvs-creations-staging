@@ -1,0 +1,69 @@
+/* .card-container::before {
+  content: "";
+  position: absolute;
+  border-bottom: 180px solid transparent;
+  border-right: 180px solid transparent;
+  border-left: 180px solid white;
+  border-top: 180px solid white;
+  top: 0;
+  left: 0;
+  z-index: -50;
+  width: 0;
+  height: 0;
+}
+
+.card-container::after {
+  content: "";
+  position: absolute;
+  border-top: 180px solid transparent;
+  border-left: 180px solid transparent;
+  border-right: 180px solid #f79839;
+  border-bottom: 180px solid #f79839;
+  bottom: 0;
+  right: 0;
+  z-index: -50;
+  width: 0;
+  height: 0;
+} */
+
+.border-top-left {
+  background: rgba(119, 116, 116, 0.719);
+
+  width: 60%;
+  height: 60%;
+
+  position: absolute;
+  top: -2px;
+  left: -2px;
+}
+
+.border-top-left::before {
+  content: "";
+  background: #282828;
+  position: absolute;
+  inset: 0;
+
+  clip-path: polygon(2px 2px, 0 100%, 100% 100%, 100% 0);
+}
+
+.border-bottom-right {
+  background: #f798395d;
+
+  width: 40%;
+  height: 60%;
+
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+
+  clip-path: polygon(0 0, 0 100%, calc(100% - 96px) 100%, 100% calc(100% - 96px), 100% 0, 0 0);
+}
+
+.border-bottom-right::before {
+  content: "";
+  background: #282828;
+  position: absolute;
+  inset: 0;
+
+  clip-path: polygon(0 0, 0 100%, calc(100% - 96px - 1px) calc(100% - 2px), calc(100% - 2px) calc(100% - 96px - 1px), 100% 0);
+}

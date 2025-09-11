@@ -1,4 +1,4 @@
-import GraphicDesignImg from "@/public/images/Files 1.png";
+import GraphicDesignImg from "@/public/images/graphic-design-img.png";
 import BrandingImg from '@/public/images/Lemon sliced 1.png'
 import Image from "next/image";
 
@@ -14,7 +14,7 @@ export const cardsData = [
         ),
         image: (
             <Image
-                className="aspect-auto xl:max-1440p:h-[480px] xl:max-1440p:w-[330px]"
+                className="aspect-auto xl:max-1440p:h-[480px] xl:max-1440p:w-[420px]"
                 src={GraphicDesignImg}
                 alt="image"
             />

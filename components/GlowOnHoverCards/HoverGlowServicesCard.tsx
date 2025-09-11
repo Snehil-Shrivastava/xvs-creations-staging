@@ -59,22 +59,15 @@ const HoverGlowServicesCard = ({
         >
           <div className={`${styles.card} backdrop-blur-sm`}>
             <div className={styles["card-content"]}>
-              {/* <div className="text-center w-[60%] max-[769px]:w-[90%] mx-auto pb-[56px] max-[769px]:pb-[42px] max-[426px]:pb-[1.25rem] mt-auto flex flex-col gap-[12px]">
-                <h3 className="font-bold text-6xl max-[426px]:text-[2rem] font-apercu-black">
-                  {card.cardTitle} {index}
-                </h3>
-                <p className="font-light text-sm max-[426px]:text-[0.5rem] max-[426px]:w-4/5 max-[426px]:mx-auto font-apercu-regular">
-                  {card.cardDesc}
-                </p>
-              </div> */}
+
             </div>
           </div>
         </div>
-        <div className="text-center w-[60%] max-[769px]:w-[90%] mx-auto pb-[56px] max-[769px]:pb-[42px] max-[426px]:pb-[1.25rem] mt-auto flex flex-col gap-[12px] absolute bottom-0 left-1/2 -translate-x-1/2 pointer-events-none">
-          <h3 className="font-bold text-6xl max-[426px]:text-[2rem] font-apercu-black">
+        <div className="text-center xl:max-1440p:w-[60%] mx-auto lg:max-xl:pb-[48px] xl:max-1440p:pb-[56px] mt-auto flex flex-col lg:max-xl:gap-[8px] xl:max-1440p:gap-[12px] absolute bottom-0 left-1/2 -translate-x-1/2 pointer-events-none">
+          <h3 className="font-bold lg:max-xl:text-5xl xl:max-1440p:text-6xl font-apercu-black">
             {card.cardTitle} {index}
           </h3>
-          <p className="font-light text-sm max-[426px]:text-[0.5rem] max-[426px]:w-4/5 max-[426px]:mx-auto font-apercu-regular">
+          <p className="font-light lg:max-xl:text-sm xl:max-1440p:text-sm mx-auto font-apercu-regular">
             {card.cardDesc}
           </p>
         </div>

@@ -52,11 +52,11 @@ const Testimonials = () => {
       >
         {ClientReviews.map((review, index) => (
           <SwiperSlide key={index}>
-            <div className="text-black flex flex-col gap-[32px] mb-[52px] w-[75%] mx-auto max-[426px]:mb-0 max-[426px]:gap-[1rem]">
-              <h4 className="font-semibold w-full text-[20px] max-[1024px]:text-[1rem] max-[426px]:text-[0.5rem]">
+            <div className="text-black flex flex-col lg:max-xl:gap-[28px] xl:max-1440p:gap-[32px] lg:max-xl:mb-[48px] xl:max-1440p:mb-[52px] lg:max-xl:w-[70%] xl:max-1440p:w-[75%] mx-auto">
+              <h4 className="font-semibold w-full lg:max-xl:text-[1rem] xl:max-1440p:text-[20px]">
                 {`"${review.quote}"`}
               </h4>
-              <p className="text-sm max-[1024px]:text-[0.75rem] w-[147px] mx-auto max-[426px]:text-[0.375rem] max-[426px]:w-[3rem]">
+              <p className="lg:max-xl:text-[12px] xl:max-1440p:text-sm lg:max-xl:w-[120px] xl:max-1440p:w-[147px] mx-auto">
                 Lorem Ipsum is simply dummy text
               </p>
             </div>

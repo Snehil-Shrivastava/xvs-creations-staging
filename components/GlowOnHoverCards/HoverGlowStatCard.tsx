@@ -115,7 +115,7 @@ const HoverGlowStatCard = () => {
 
   return (
     <div
-      className={`${styles.bodyContainer} min-[1906px]:w-4/5 min-[1906px]:mx-auto min-[1536px]:max-[1906px]:w-9/10 min-[1536px]:max-[1906px]:mx-auto lg:mb-[220px] max-[1024px]:mb-[143px] max-[426px]:mb-[5rem] relative z-[70] mx-auto max-[769px]:w-19/20`}
+      className={`${styles.bodyContainer}  lg:max-xl:mb-[143px] xl:max-1440p:mb-[220px] relative z-[70] mx-auto`}
     >
       <div id="cards" className={styles.cards} ref={cardsContainerRef}>
         {CardsData.map((card, index) => (
@@ -125,31 +125,31 @@ const HoverGlowStatCard = () => {
           >
             <div className={`${styles.card} ${index === 0 ? styles.clipCardFirst : index === 3 ? styles.clipCardLast : ''}`}>
               <div className={styles["card-content"]}>
-                <div className="text-left 2xl:pl-[75px] 2xl:pb-[56px] xl:pl-[55px] xl:pb-[55px] lg:pl-[35px] lg:pb-[35px] max-[1024px]:pl-[12px] max-[1024px]:pb-[12px] mt-auto max-[426px]:mt-[5rem] max-[426px]:pl-[2rem] max-[426px]:pb-[2rem]">
+                <div className="text-left lg:max-xl:pl-[48px] xl:max-1440p:pl-[55px] lg:max-xl:pb-[48px] xl:max-1440p:pb-[55px] mt-auto">
                   <h3
-                    className={`font-medium text-2xl max-[1024px]:text-[1rem] max-[426px]:text-[0.75rem] font-apercu-bold`}
+                    className={`font-medium lg:max-xl:text-xl xl:max-1440p:text-2xl font-apercu-bold`}
                   >
                     {card.cardTitle}
                   </h3>
                   <h1
-                    className={`text-[#F79839] font-bold 2xl:text-[5.75rem] xl:text-[6.5rem]/[7rem] lg:text-[4rem] max-[1024px]:text-[3.6rem] font-apercu-black`}
+                    className={`text-[#F79839] font-bold lg:max-xl:text-[5.5rem]/[6rem] xl:max-1440p:text-[6.5rem]/[7rem] font-apercu-black`}
                   >
                     {card.cardStat}
                   </h1>
                   <p
-                    className={`text-[#F3EDDE] font-extralight text-lg max-[1024px]:text-[0.75rem] max-[426px]:text-[0.5625rem] font-apercu-regular`}
+                    className={`text-[#F3EDDE] font-extralight xl:max-1440p:text-lg font-apercu-regular`}
                   >
                     {card.cardText1}
                   </p>
                   {card.cardText2 !== "" && (
                     <p
-                      className={`text-[#F3EDDE] font-extralight text-lg max-[1024px]:text-[0.75rem] max-[426px]:text-[0.5625rem] font-apercu-regular`}
+                      className={`text-[#F3EDDE] font-extralight xl:max-1440p:text-lg font-apercu-regular`}
                     >
                       {card.cardText2}
                     </p>
                   )}
                   {card.descriptor !== '' && (
-                    <p className="text-[#F3EDDE] font-extralight text-[0.875rem] font-apercu-itallic">
+                    <p className="text-[#F3EDDE] font-extralight xl:max-1440p:text-[0.875rem] font-apercu-itallic">
                         {card.descriptor}
                     </p>
                   )}

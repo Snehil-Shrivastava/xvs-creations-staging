@@ -12,7 +12,7 @@ const ServicesPage = () => {
       <div className="h-[70vh]">
         <ServicesPageHeading />
       </div>
-      <div className="xl:max-1440p:w-4/5 mx-auto mt-55">
+      <div className="lg:max-xl:w-4/5 xl:max-1440p:w-4/5 mx-auto lg:max-xl:mt-30 xl:max-1440p:mt-55">
         <ServicesCard />
       </div>
     </main>

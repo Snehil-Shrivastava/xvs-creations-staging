@@ -52,15 +52,17 @@ const HoverGlowServicesCard = ({
 
   return (
     <div className={`${styles.bodyContainer} body-container`}>
-      <div id="cards" className={`${styles.cards} relative cards-container`} ref={cardsContainerRef}>
+      <div
+        id="cards"
+        className={`${styles.cards} relative cards-container`}
+        ref={cardsContainerRef}
+      >
         <div
           key={index}
           className={`${styles.cardShadowContainer} relative h-full backdrop-blur-sm`}
         >
           <div className={`${styles.card} backdrop-blur-sm`}>
-            <div className={styles["card-content"]}>
-
-            </div>
+            <div className={styles["card-content"]}></div>
           </div>
         </div>
         <div className="text-center xl:max-1440p:w-[60%] mx-auto lg:max-xl:pb-[48px] xl:max-1440p:pb-[56px] mt-auto flex flex-col lg:max-xl:gap-[8px] xl:max-1440p:gap-[12px] absolute bottom-0 left-1/2 -translate-x-1/2 pointer-events-none">
@@ -78,12 +80,16 @@ const HoverGlowServicesCard = ({
                 src={card.cardGif}
                 alt="icon"
                 className="scale-[2] absolute -top-[1rem] max-[769px]:top-[-2rem]"
+                priority={true}
+                unoptimized={true}
               />
             ) : (
               <Image
                 src={card.cardGif}
                 alt="icon"
                 className="scale-[1.2] absolute -top-[6rem]"
+                priority={true}
+                unoptimized={true}
               />
             )}
           </div>

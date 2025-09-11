@@ -109,7 +109,6 @@ const ServicesCard = () => {
                   "polygon(0 0, 0 100%, calc(100% - 96px) 100%, 100% calc(100% - 96px), 100% 0, 0 0)",
               }}
             >
-              
               <div className="">
                 <p className="lg:max-xl:text-[1rem]/[1.8rem] xl:max-1440p:text-[1.25rem]/[2rem] font-thin lg:max-xl:w-9/20 xl:max-1440p:w-9/20 ml-auto lg:max-xl:py-20 xl:max-1440p:py-25 lg:max-xl:pr-15 xl:max-1440p:pr-20">
                   {card.description}
@@ -120,7 +119,7 @@ const ServicesCard = () => {
               {card.subtitle}
             </p>
             <div className="absolute origin-bottom bottom-0">{card.image}</div>
-            <Link href='/' className="absolute bottom-0 right-0">
+            <Link href="/" className="absolute bottom-0 right-0">
               <ServicesCardSVG />
             </Link>
           </div>

@@ -9,7 +9,7 @@ const ServicesCardSVG = () => {
       viewBox="0 0 34 34"
       fill="none"
     >
-      <g clip-path="url(#clip0_4146_1680)">
+      <g clipPath="url(#clip0_4146_1680)">
         <path
           d="M0.815776 0H34V33.1842H30.0619V6.72271L2.78472 34L0 31.2152L27.2773 3.93809H0.815776V0Z"
           fill="#F79839"

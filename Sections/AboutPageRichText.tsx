@@ -378,6 +378,7 @@ const AboutPageRichText = () => {
         className=""
         style={{
           height: "calc(50%)",
+          maxHeight: "570px"
         }}
       >
         <svg
@@ -402,7 +403,7 @@ const AboutPageRichText = () => {
             fill="#F3EDDE"
           />
         </svg>
-        <p className="font-light text-center xl:max-1440p:w-4/5 mx-auto text-[#F3EDDE] xl:max-1440p:text-[1.25rem]/[2.5rem] xl:max-1440p:mt-20">
+        <p className="font-light text-center lg:max-xl:w-9/10 xl:max-1440p:w-4/5 mx-auto text-[#F3EDDE] lg:max-1440p:text-[1.25rem]/[2.5rem] lg:max-xl:mt-15 xl:max-1440p:mt-20">
           With the inspiration of designing we started back in 2014 and bringing
           them to reality since then. From cosmetic startups to big automotive
           companies we had fun working at different scales and industries. We

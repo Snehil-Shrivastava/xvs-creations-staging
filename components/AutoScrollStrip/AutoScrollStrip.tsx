@@ -10,7 +10,9 @@ const AutoScrollStrip = () => {
     {
       quote:
         "l didn't feel like I chased anyone, everything was punctual, and I had a good idea when the next delivery would be. img 1",
-      logo: <Amity />,
+      logo: (
+        <Amity className="lg:max-xl:mx-[32px] xl:max-1440p:mx-[40px] lg:max-xl:w-[90px]" />
+      ),
     },
     {
       quote:
@@ -20,7 +22,9 @@ const AutoScrollStrip = () => {
     {
       quote:
         "l didn't feel like I chased anyone, everything was punctual, and I had a good idea when the next delivery would be. img 3",
-      logo: <Amity />,
+      logo: (
+        <Amity className="lg:max-xl:mx-[32px] xl:max-1440p:mx-[40px] lg:max-xl:w-[90px]" />
+      ),
     },
     {
       quote:
@@ -30,7 +34,9 @@ const AutoScrollStrip = () => {
     {
       quote:
         "l didn't feel like I chased anyone, everything was punctual, and I had a good idea when the next delivery would be. img 5",
-      logo: <Amity />,
+      logo: (
+        <Amity className="lg:max-xl:mx-[32px] xl:max-1440p:mx-[40px] lg:max-xl:w-[90px]" />
+      ),
     },
     {
       quote:

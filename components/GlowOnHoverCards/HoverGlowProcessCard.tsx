@@ -71,7 +71,7 @@ const HoverGlowProcessCard = ({ card }: { card: ProcessCardType }) => {
                     {card.cardTitle}
                   </h1>
                 </div>
-                <p className="xl:max-1440p:text-[20px]/[30px] tracking-wider w-[72%] mx-auto font-light text-left">
+                <p className="lg:max-xl:text-[1rem]/[1.8rem] xl:max-1440p:text-[20px]/[30px] tracking-wider w-[72%] mx-auto font-light text-left">
                   {card.cardDesc}
                 </p>
               </div>

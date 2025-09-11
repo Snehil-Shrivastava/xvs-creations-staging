@@ -7,11 +7,11 @@ import ClutchReview from "@/SVGs/ClutchReview";
 
 const ClientReviews = () => {
   return (
-    <div className="xl:max-1440p:py-[80px] mt-[64px] review-box min-[1906px]:mx-auto max-[769px]:w-19/20 max-[769px]:mx-auto">
-      <div className="xl:max-1440p:w-[85%] mx-auto">
-        <div className="client-banner xl:max-1440p:pb-[64px] select-none xl:max-1440p:gap-x-[42px] xl:max-1440p:gap-y-[28px]">
+    <div className="lg:max-xl:py-[70px] xl:max-1440p:py-[80px] mt-[64px] review-box">
+      <div className="lg:max-1440p:w-[85%] mx-auto">
+        <div className="client-banner lg:max-xl:pb-[52px] xl:max-1440p:pb-[64px] select-none lg:max-xl:gap-y-[22px] xl:max-1440p:gap-y-[28px] lg:max-xl:gap-x-[22px]">
           {clientLogo.map((logo) => (
-            <div key={logo.id}>
+            <div key={logo.id} className="text-center">
                 {logo.logo}
             </div>
           ))}
@@ -21,7 +21,7 @@ const ClientReviews = () => {
             <ClutchReview />
             <ClutchReview />
           </div>
-          <div className="flex xl:max-1440p:mt-[64px] text-left gap-[32px] justify-between text-black">
+          <div className="flex lg:max-xl:mt-[42px] xl:max-1440p:mt-[64px] text-left gap-[32px] justify-between text-black">
             {clientReviews.map((client, index) => (
               <div key={index} className="w-[320px]">
                 <h3 className="font-bold tracking-wider max-[1025px]:text-[0.75rem] max-[769px]:text-[0.5rem] max-[426px]:text-[6px] text-[0.875rem]">

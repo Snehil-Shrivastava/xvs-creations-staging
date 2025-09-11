@@ -30,50 +30,50 @@ export const clientReviews = [
 export const clientLogo = [
     {
         id: 1,
-        logo: <Amity className="mx-auto w-auto max-[1441px]:w-[92px] max-[1906px]:w-30" />
+        logo: <Amity className="mx-auto w-auto xl:max-1440p:w-[92px]" />
     },
     {
         id: 2,
-        logo: <Amity className="mx-auto w-auto max-[1441px]:w-[92px] max-[1906px]:w-30" />
+        logo: <Amity className="mx-auto w-auto xl:max-1440p:w-[92px]" />
     },
     {
         id: 3,
-        logo: <Amity className="mx-auto w-auto max-[1441px]:w-[92px] max-[1906px]:w-30" />
+        logo: <Amity className="mx-auto w-auto xl:max-1440p:w-[92px]" />
     },
     {
         id: 4,
-        logo: <Amity className="mx-auto w-auto max-[1441px]:w-[92px] max-[1906px]:w-30" />
+        logo: <Amity className="mx-auto w-auto xl:max-1440p:w-[92px]" />
     },
     {
         id: 5,
-        logo: <Amity className="mx-auto w-auto max-[1441px]:w-[92px] max-[1906px]:w-30" />
+        logo: <Amity className="mx-auto w-auto xl:max-1440p:w-[92px]" />
     },
     {
         id: 6,
-        logo: <Amity className="mx-auto w-auto max-[1441px]:w-[92px] max-[1906px]:w-30" />
+        logo: <Amity className="mx-auto w-auto xl:max-1440p:w-[92px]" />
     },
     {
         id: 7,
-        logo: <Amity className="mx-auto w-auto max-[1441px]:w-[92px] max-[1906px]:w-30" />
+        logo: <Amity className="mx-auto w-auto xl:max-1440p:w-[92px]" />
     },
     {
         id: 8,
-        logo: <Amity className="mx-auto w-auto max-[1441px]:w-[92px] max-[1906px]:w-30" />
+        logo: <Amity className="mx-auto w-auto xl:max-1440p:w-[92px]" />
     },
     {
         id: 9,
-        logo: <Amity className="mx-auto w-auto max-[1441px]:w-[92px] max-[1906px]:w-30" />
+        logo: <Amity className="mx-auto w-auto xl:max-1440p:w-[92px]" />
     },
     {
         id: 10,
-        logo: <Amity className="mx-auto w-auto max-[1441px]:w-[92px] max-[1906px]:w-30" />
+        logo: <Amity className="mx-auto w-auto xl:max-1440p:w-[92px]" />
     },
     {
         id: 11,
-        logo: <Amity className="mx-auto w-auto max-[1441px]:w-[92px] max-[1906px]:w-30" />
+        logo: <Amity className="mx-auto w-auto xl:max-1440p:w-[92px]" />
     },
     {
         id: 12,
-        logo: <Amity className="mx-auto w-auto max-[1441px]:w-[92px] max-[1906px]:w-30" />
+        logo: <Amity className="mx-auto w-auto xl:max-1440p:w-[92px]" />
     },
 ]

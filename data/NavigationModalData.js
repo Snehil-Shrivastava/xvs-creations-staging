@@ -6,16 +6,21 @@ export const MainNavLinks = [
     },
     {
         id: 2,
-        label: 'Work',
+        label: 'Services',
         url: '/services'
     },
     {
         id: 3,
-        label: 'Blog',
+        label: 'Work',
         url: '/'
     },
     {
         id: 4,
+        label: 'Blog',
+        url: '/'
+    },
+    {
+        id: 5,
         label: 'Contact',
         url: '/contact'
     },

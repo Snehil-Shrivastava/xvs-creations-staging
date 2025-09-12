@@ -46,7 +46,7 @@ const SectionHeading = ({
       <div
         className={`absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 bg-[#ffffff56] md:max-lg:text-[9px] lg:max-xl:text-xs xl:max-1440p:text-sm font-light text-[#F79839] h-[2lh] btn-container-outer`}
       >
-        <div className="flex lg:max-xl:gap-3 xl:max-1440p:gap-3.5 items-center bg-[#0009] backdrop-blur-xs h-full w-full px-4 btn-container-inner">
+        <div className="flex md:max-lg:gap-2 lg:max-xl:gap-3 xl:max-1440p:gap-3.5 items-center bg-[#0009] backdrop-blur-xs h-full w-full px-4 btn-container-inner">
           <span className="text-nowrap">{btnHeading}</span>
           <div>{btnIcon}</div>
         </div>

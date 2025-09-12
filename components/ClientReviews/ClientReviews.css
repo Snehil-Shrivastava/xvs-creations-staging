@@ -15,9 +15,16 @@
 .client-banner {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  filter: grayscale(100%);
 
   border-bottom: 1px solid rgba(0, 0, 0, 0.102);
+}
+
+.client-logo {
+  filter: grayscale(100%);
+}
+
+.client-logo:hover {
+  filter: grayscale(0);
 }
 
 @media screen and (max-width: 426px) {

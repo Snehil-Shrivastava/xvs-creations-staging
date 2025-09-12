@@ -95,7 +95,7 @@ const AboutPageRichText = () => {
   );
 
   return (
-    <div ref={mainContainerRef} className="h-[150vh] pointer-events-none">
+    <div ref={mainContainerRef} className="h-[130vh] pointer-events-none">
       <div
         style={{
           height: "calc(50%)",
@@ -375,7 +375,7 @@ const AboutPageRichText = () => {
         </div>
       </div>
       <div
-        className=""
+        className="pt-8"
         style={{
           height: "calc(50%)",
           maxHeight: "570px"

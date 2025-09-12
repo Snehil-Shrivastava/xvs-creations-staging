@@ -4,6 +4,7 @@ import { clientReviews } from "@/data/AboutPageReviewsData";
 import { clientLogo } from "@/data/AboutPageReviewsData";
 
 import ClutchReview from "@/SVGs/ClutchReview";
+import SortListReviews from "@/SVGs/SortListReviews";
 
 const ClientReviews = () => {
   return (
@@ -11,15 +12,15 @@ const ClientReviews = () => {
       <div className="lg:max-1440p:w-[85%] mx-auto">
         <div className="client-banner lg:max-xl:pb-[52px] xl:max-1440p:pb-[64px] select-none lg:max-xl:gap-y-[22px] xl:max-1440p:gap-y-[28px] lg:max-xl:gap-x-[22px]">
           {clientLogo.map((logo) => (
-            <div key={logo.id} className="text-center">
+            <div key={logo.id} className="text-center client-logo">
                 {logo.logo}
             </div>
           ))}
         </div>
         <div className="mt-[48px] max-[1025px]:mt-[28px] max-[769px]:mt-[32px] max-[426px]:mt-[22px]">
-          <div className="flex gap-[22px] justify-center select-none">
+          <div className="flex gap-[22px] justify-center items-center select-none">
             <ClutchReview />
-            <ClutchReview />
+            <SortListReviews className="w-[63px] h-[19px]" fill="white" />
           </div>
           <div className="flex lg:max-xl:mt-[42px] xl:max-1440p:mt-[64px] text-left gap-[32px] justify-between text-black">
             {clientReviews.map((client, index) => (

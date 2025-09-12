@@ -115,7 +115,7 @@ const HoverGlowStatCard = () => {
 
   return (
     <div
-      className={`${styles.bodyContainer} lg:max-xl:mb-[143px] xl:max-1440p:mb-[220px] relative z-[70] mx-auto`}
+      className={`${styles.bodyContainer} md:max-lg:mb-[120px] lg:max-xl:mb-[143px] xl:max-1440p:mb-[220px] relative z-[70] mx-auto`}
     >
       <div id="cards" className={styles.cards} ref={cardsContainerRef}>
         {CardsData.map((card, index) => (
@@ -125,9 +125,9 @@ const HoverGlowStatCard = () => {
           >
             <div className={`${styles.card} ${index === 0 ? styles.clipCardFirst : index === 3 ? styles.clipCardLast : ''}`}>
               <div className={styles["card-content"]}>
-                <div className="text-left lg:max-xl:pl-[48px] xl:max-1440p:pl-[55px] lg:max-xl:pb-[48px] xl:max-1440p:pb-[55px] mt-auto">
+                <div className="text-left md:max-lg:pl-[30px] lg:max-xl:pl-[48px] xl:max-1440p:pl-[55px]  md:max-lg:pb-[30px] lg:max-xl:pb-[48px] xl:max-1440p:pb-[55px] mt-auto">
                   <h3
-                    className={`font-medium md:max-lg:text-lg lg:max-xl:text-xl xl:max-1440p:text-2xl font-apercu-bold`}
+                    className={`text-[#F3EDDE] font-medium md:max-lg:text-sm lg:max-xl:text-xl xl:max-1440p:text-2xl font-calSans`}
                   >
                     {card.cardTitle}
                   </h3>
@@ -137,13 +137,13 @@ const HoverGlowStatCard = () => {
                     {card.cardStat}
                   </h1>
                   <p
-                    className={`text-[#F3EDDE] font-extralight md:max-lg:text-sm xl:max-1440p:text-lg font-apercu-regular`}
+                    className={`text-[#F3EDDE] font-extralight md:max-lg:text-xs xl:max-1440p:text-lg font-apercu-regular`}
                   >
                     {card.cardText1}
                   </p>
                   {card.cardText2 !== "" && (
                     <p
-                      className={`text-[#F3EDDE] font-extralight md:max-lg:text-sm xl:max-1440p:text-lg font-apercu-regular`}
+                      className={`text-[#F3EDDE] font-extralight md:max-lg:text-xs xl:max-1440p:text-lg font-apercu-regular`}
                     >
                       {card.cardText2}
                     </p>

@@ -46,7 +46,7 @@ const HomePageServices = () => {
           Autoplay,
         ]}
         slidesPerView="auto"
-        autoplay={{ delay: 5000, disableOnInteraction: false }}
+        // autoplay={{ delay: 5000, disableOnInteraction: false }}
         effect="coverflow"
         grabCursor
         centeredSlides

@@ -45,11 +45,17 @@
 }
 
 .clipCardFirst {
-    clip-path: polygon(0 38px, 0 100%, 100% 100%, 100% 0, 38px 0);
+  clip-path: polygon(0 38px, 0 100%, 100% 100%, 100% 0, 38px 0);
 }
 
 .clipCardLast {
-    clip-path: polygon(0 0, 0 100%, calc(100% - 38px) 100%, 100% calc(100% - 38px), 100% 0);
+  clip-path: polygon(
+    0 0,
+    0 100%,
+    calc(100% - 38px) 100%,
+    100% calc(100% - 38px),
+    100% 0
+  );
 }
 
 .clipCardFirst .card-content {
@@ -57,7 +63,13 @@
 }
 
 .clipCardLast .card-content {
-  clip-path: polygon(0 0, 0 100%, calc(100% - 38px) 100%, 100% calc(100% - 38px), 100% 0);
+  clip-path: polygon(
+    0 0,
+    0 100%,
+    calc(100% - 38px) 100%,
+    100% calc(100% - 38px),
+    100% 0
+  );
 }
 
 .card:hover::before {
@@ -78,7 +90,7 @@
 }
 
 .card::before {
-    background: radial-gradient(
+  background: radial-gradient(
     800px circle at var(--mouse-x) var(--mouse-y),
     rgba(247, 152, 57, 0.65),
     transparent 60%
@@ -117,10 +129,4 @@
   padding: 10px;
   position: absolute;
   z-index: 2;
-}
-
-@media screen and (max-width: 1024px) {
-  .card-content {
-  padding: 30px;
-}
 }

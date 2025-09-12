@@ -65,11 +65,11 @@ const HoverGlowServicesCard = ({
             <div className={styles["card-content"]}></div>
           </div>
         </div>
-        <div className="text-center xl:max-1440p:w-[60%] mx-auto lg:max-xl:pb-[48px] xl:max-1440p:pb-[56px] mt-auto flex flex-col lg:max-xl:gap-[8px] xl:max-1440p:gap-[12px] absolute bottom-0 left-1/2 -translate-x-1/2 pointer-events-none">
-          <h3 className="font-bold lg:max-xl:text-5xl xl:max-1440p:text-6xl font-apercu-black">
+        <div className="text-center md:max-lg:w-7/10 xl:max-1440p:w-[60%] mx-auto md:max-lg:pb-[40px] lg:max-xl:pb-[48px] xl:max-1440p:pb-[56px] mt-auto flex flex-col md:max-lg:gap-[8px] lg:max-xl:gap-[8px] xl:max-1440p:gap-[12px] absolute bottom-0 left-1/2 -translate-x-1/2 pointer-events-none">
+          <h3 className="font-bold md:max-xl:text-5xl xl:max-1440p:text-6xl font-apercu-black">
             {card.cardTitle} {index}
           </h3>
-          <p className="font-light lg:max-xl:text-sm xl:max-1440p:text-sm mx-auto font-apercu-regular">
+          <p className="text-[#F3EDDE] font-light md:max-lg:text-xs lg:max-xl:text-sm xl:max-1440p:text-sm mx-auto font-apercu-regular">
             {card.cardDesc}
           </p>
         </div>
@@ -79,7 +79,7 @@ const HoverGlowServicesCard = ({
               <Image
                 src={card.cardGif}
                 alt="icon"
-                className="scale-[2] absolute -top-[1rem] max-[769px]:top-[-2rem]"
+                className="scale-[2] absolute -top-[1rem]"
                 priority={true}
                 unoptimized={true}
               />
@@ -87,7 +87,7 @@ const HoverGlowServicesCard = ({
               <Image
                 src={card.cardGif}
                 alt="icon"
-                className="scale-[1.2] absolute -top-[6rem]"
+                className="scale-[1.2] absolute md:max-lg:top-[-5rem] -top-[6rem]"
                 priority={true}
                 unoptimized={true}
               />

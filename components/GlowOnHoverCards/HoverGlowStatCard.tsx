@@ -115,7 +115,7 @@ const HoverGlowStatCard = () => {
 
   return (
     <div
-      className={`${styles.bodyContainer}  lg:max-xl:mb-[143px] xl:max-1440p:mb-[220px] relative z-[70] mx-auto`}
+      className={`${styles.bodyContainer} lg:max-xl:mb-[143px] xl:max-1440p:mb-[220px] relative z-[70] mx-auto`}
     >
       <div id="cards" className={styles.cards} ref={cardsContainerRef}>
         {CardsData.map((card, index) => (
@@ -127,35 +127,35 @@ const HoverGlowStatCard = () => {
               <div className={styles["card-content"]}>
                 <div className="text-left lg:max-xl:pl-[48px] xl:max-1440p:pl-[55px] lg:max-xl:pb-[48px] xl:max-1440p:pb-[55px] mt-auto">
                   <h3
-                    className={`font-medium lg:max-xl:text-xl xl:max-1440p:text-2xl font-apercu-bold`}
+                    className={`font-medium md:max-lg:text-lg lg:max-xl:text-xl xl:max-1440p:text-2xl font-apercu-bold`}
                   >
                     {card.cardTitle}
                   </h3>
                   <h1
-                    className={`text-[#F79839] font-bold lg:max-xl:text-[5.5rem]/[6rem] xl:max-1440p:text-[6.5rem]/[7rem] font-apercu-black`}
+                    className={`text-[#F79839] font-bold md:max-lg:text-[4rem]/[5rem] lg:max-xl:text-[5.5rem]/[6rem] xl:max-1440p:text-[6.5rem]/[7rem] font-apercu-black`}
                   >
                     {card.cardStat}
                   </h1>
                   <p
-                    className={`text-[#F3EDDE] font-extralight xl:max-1440p:text-lg font-apercu-regular`}
+                    className={`text-[#F3EDDE] font-extralight md:max-lg:text-sm xl:max-1440p:text-lg font-apercu-regular`}
                   >
                     {card.cardText1}
                   </p>
                   {card.cardText2 !== "" && (
                     <p
-                      className={`text-[#F3EDDE] font-extralight xl:max-1440p:text-lg font-apercu-regular`}
+                      className={`text-[#F3EDDE] font-extralight md:max-lg:text-sm xl:max-1440p:text-lg font-apercu-regular`}
                     >
                       {card.cardText2}
                     </p>
                   )}
                   {card.descriptor !== '' && (
-                    <p className="text-[#F3EDDE] font-extralight xl:max-1440p:text-[0.875rem] font-apercu-itallic">
+                    <p className="text-[#F3EDDE] font-extralight md:max-lg:text-[0.5rem] xl:max-1440p:text-[0.875rem] font-apercu-itallic">
                         {card.descriptor}
                     </p>
                   )}
                 </div>
                 <div>
-                  {card.id === 1 ? <Image src={card.SVGIcon} alt="Icon" className="absolute top-[10%] right-[5%] scale-90" /> : card.SVGIcon}
+                  {card.id === 1 ? <Image src={card.SVGIcon} alt="Icon" className="absolute md:max-lg:top-[2%] top-[10%] md:max-lg:right-0 right-[5%] md:max-lg:scale-60 scale-90" /> : card.SVGIcon}
                 </div>
               </div>
             </div>

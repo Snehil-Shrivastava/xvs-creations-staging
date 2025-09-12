@@ -118,3 +118,9 @@
   position: absolute;
   z-index: 2;
 }
+
+@media screen and (max-width: 1024px) {
+  .card-content {
+  padding: 30px;
+}
+}

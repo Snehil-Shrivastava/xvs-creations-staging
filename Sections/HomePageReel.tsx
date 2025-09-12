@@ -30,10 +30,10 @@ const HomePageReel = () => {
   return (
     <div
       ref={containerRef}
-      className="lg:max-xl:h-[460px] xl:max-1440p:h-[520px] mb-[143px] mt-[143px] relative z-[70]"
+      className="md:max-lg:h-[320px] lg:max-xl:h-[460px] xl:max-1440p:h-[520px] mb-[143px] md:max-lg:mt-[90px] mt-[143px] relative z-[70]"
     >
       <div
-        className={`h-full bg-black ${styles.reelImg} mx-auto max-[769px]:w-19/20`}
+        className={`h-full bg-black ${styles.reelImg} mx-auto`}
       >
 
       </div>

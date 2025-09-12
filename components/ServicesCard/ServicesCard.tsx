@@ -54,6 +54,7 @@ const ServicesCard = () => {
             anticipatePin: 1,
             // prevent the gap that forms between pinned sections
             pinSpacing: false,
+            // markers: true
           },
         });
 
@@ -97,7 +98,7 @@ const ServicesCard = () => {
             key={index}
             className="relative"
           >
-            <h1 className="font-calSans lg:max-xl:text-[4rem] xl:max-1440p:text-[6rem] text-[#F79839] absolute lg:max-xl:top-[-3.6rem] xl:max-1440p:top-[-5.5rem] right-0 -z-10">
+            <h1 className="font-calSans md:max-lg:text-[3.5rem] lg:max-xl:text-[4rem] xl:max-1440p:text-[6rem] text-[#F79839] absolute md:max-lg:top-[-3rem] lg:max-xl:top-[-3.6rem] xl:max-1440p:top-[-5.5rem] right-0 -z-10">
               {card && card.title}
             </h1>
             <div className="border-top-left" />
@@ -110,12 +111,12 @@ const ServicesCard = () => {
               }}
             >
               <div className="">
-                <p className="lg:max-xl:text-[1rem]/[1.8rem] xl:max-1440p:text-[1.25rem]/[2rem] font-thin lg:max-xl:w-9/20 xl:max-1440p:w-9/20 ml-auto lg:max-xl:py-20 xl:max-1440p:py-25 lg:max-xl:pr-15 xl:max-1440p:pr-20">
+                <p className="md:max-lg:text-[0.85rem]/[1.5rem] lg:max-xl:text-[1rem]/[1.8rem] xl:max-1440p:text-[1.25rem]/[2rem] font-thin md:max-lg:w-1/2 lg:max-xl:w-9/20 xl:max-1440p:w-9/20 ml-auto md:max-lg:py-15 lg:max-xl:py-20 xl:max-1440p:py-25 md:max-lg:pr-12 lg:max-xl:pr-15 xl:max-1440p:pr-20">
                   {card.description}
                 </p>
               </div>
             </div>
-            <p className="font-apercu-bold lg:max-xl:text-[0.65rem] xl:max-1440p:text-[0.75rem] absolute origin-bottom-left bottom-0 rotate-270 text-[#F3EDDE] tracking-[8px]">
+            <p className="font-apercu-bold md:max-lg:text-[0.5rem] lg:max-xl:text-[0.65rem] xl:max-1440p:text-[0.75rem] absolute origin-bottom-left bottom-0 rotate-270 text-[#F3EDDE] tracking-[8px]">
               {card.subtitle}
             </p>
             <div className="absolute origin-bottom bottom-0">{card.image}</div>

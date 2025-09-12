@@ -30,9 +30,9 @@ const ContactPageForm = () => {
                 btnHeading="TOUCH"
                 btnIcon={<WordsBtnSVG />}
                 className="py-15"
-                style='lg:max-xl:text-[6.5rem]/[7.5rem] xl:max-1440p:text-[8rem]/[9rem]'
+                style='md:max-lg:text-[5.5rem]/[6.5rem] lg:max-xl:text-[6.5rem]/[7.5rem] xl:max-1440p:text-[8rem]/[9rem]'
             />
-            <div className="lg:max-xl:w-4/5 xl:max-1440p:w-3/4 mx-auto pb-15">
+            <div className="md:max-xl:w-4/5 xl:max-1440p:w-3/4 mx-auto pb-15">
               <div>
                 <Form action="">
                   <div className="text-sm flex flex-col gap-12 text-[#ffffffad] max-[769px]:text-[0.6875rem]">

@@ -4,7 +4,7 @@ import WordsBtnSVG from "@/SVGs/WordsBtnSVG";
 
 const AboutPageClient = () => {
   return (
-    <div className="mt-40 pb-40">
+    <div className="my-40">
       <SectionHeading
         heading="CLIENTS"
         btnHeading="REVIEWS"

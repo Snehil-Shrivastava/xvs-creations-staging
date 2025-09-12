@@ -11,37 +11,37 @@ const AutoScrollStrip = () => {
       quote:
         "l didn't feel like I chased anyone, everything was punctual, and I had a good idea when the next delivery would be. img 1",
       logo: (
-        <Amity className="lg:max-xl:mx-[32px] xl:max-1440p:mx-[40px] lg:max-xl:w-[90px]" />
+        <Amity className="md:max-lg:mx-[22px] lg:max-xl:mx-[32px] xl:max-1440p:mx-[40px] md:max-lg:w-[72px] lg:max-xl:w-[90px]" />
       ),
     },
     {
       quote:
         "l didn't feel like I chased anyone, everything was punctual, and I had a good idea when the next delivery would be. img 2",
-      logo: <Paytm />,
+      logo: <Paytm className="md:max-lg:mx-[22px] lg:max-xl:mx-[32px] xl:max-1440p:mx-[40px] md:max-lg:w-[90px] lg:max-xl:w-[120px]" />,
     },
     {
       quote:
         "l didn't feel like I chased anyone, everything was punctual, and I had a good idea when the next delivery would be. img 3",
       logo: (
-        <Amity className="lg:max-xl:mx-[32px] xl:max-1440p:mx-[40px] lg:max-xl:w-[90px]" />
+        <Amity className="md:max-lg:mx-[22px] lg:max-xl:mx-[32px] xl:max-1440p:mx-[40px] md:max-lg:w-[72px] lg:max-xl:w-[90px]" />
       ),
     },
     {
       quote:
         "l didn't feel like I chased anyone, everything was punctual, and I had a good idea when the next delivery would be. img 4",
-      logo: <Paytm />,
+      logo: <Paytm className="md:max-lg:mx-[22px] lg:max-xl:mx-[32px] xl:max-1440p:mx-[40px] md:max-lg:w-[90px] lg:max-xl:w-[120px]" />,
     },
     {
       quote:
         "l didn't feel like I chased anyone, everything was punctual, and I had a good idea when the next delivery would be. img 5",
       logo: (
-        <Amity className="lg:max-xl:mx-[32px] xl:max-1440p:mx-[40px] lg:max-xl:w-[90px]" />
+        <Amity className="md:max-lg:mx-[22px] lg:max-xl:mx-[32px] xl:max-1440p:mx-[40px] md:max-lg:w-[72px] lg:max-xl:w-[90px]" />
       ),
     },
     {
       quote:
         "l didn't feel like I chased anyone, everything was punctual, and I had a good idea when the next delivery would be. img 6",
-      logo: <Paytm />,
+      logo: <Paytm className="md:max-lg:mx-[22px] lg:max-xl:mx-[32px] xl:max-1440p:mx-[40px] md:max-lg:w-[90px] lg:max-xl:w-[120px]" />,
     },
   ];
 

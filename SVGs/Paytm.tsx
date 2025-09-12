@@ -8,7 +8,7 @@ const Paytm = ({className}: {className?: string}) => {
       height="19"
       viewBox="0 0 143 19"
       fill="none"
-      className={`${className} inline-block lg:max-xl:mx-[32px] xl:max-1440p:mx-[40px] lg:max-xl:w-[120px]`}
+      className={`${className} inline-block`}
     >
       <g clipPath="url(#clip0_836_1340)">
         <path

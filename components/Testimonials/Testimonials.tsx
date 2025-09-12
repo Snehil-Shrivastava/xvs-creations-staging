@@ -52,11 +52,11 @@ const Testimonials = () => {
       >
         {ClientReviews.map((review, index) => (
           <SwiperSlide key={index}>
-            <div className="text-black flex flex-col lg:max-xl:gap-[28px] xl:max-1440p:gap-[32px] lg:max-xl:mb-[48px] xl:max-1440p:mb-[52px] lg:max-xl:w-[70%] xl:max-1440p:w-[75%] mx-auto">
-              <h4 className="font-semibold w-full lg:max-xl:text-[1rem] xl:max-1440p:text-[20px]">
+            <div className="text-black flex flex-col md:max-lg:gap-[18px] lg:max-xl:gap-[28px] xl:max-1440p:gap-[32px] md:max-lg:mb-[32px] lg:max-xl:mb-[48px] xl:max-1440p:mb-[52px] md:max-lg:w-[80%] lg:max-xl:w-[70%] xl:max-1440p:w-[75%] mx-auto">
+              <h4 className="font-semibold w-full md:max-lg:text-[0.875rem] lg:max-xl:text-[1rem] xl:max-1440p:text-[20px]">
                 {`"${review.quote}"`}
               </h4>
-              <p className="lg:max-xl:text-[12px] xl:max-1440p:text-sm lg:max-xl:w-[120px] xl:max-1440p:w-[147px] mx-auto">
+              <p className="md:max-lg:text-[10px] lg:max-xl:text-[12px] xl:max-1440p:text-sm md:max-lg:w-[90px] lg:max-xl:w-[120px] xl:max-1440p:w-[147px] mx-auto">
                 Lorem Ipsum is simply dummy text
               </p>
             </div>

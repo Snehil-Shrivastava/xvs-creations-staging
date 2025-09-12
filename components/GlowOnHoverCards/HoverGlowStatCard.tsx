@@ -115,7 +115,7 @@ const HoverGlowStatCard = () => {
 
   return (
     <div
-      className={`${styles.bodyContainer} md:max-lg:mb-[120px] lg:max-xl:mb-[143px] xl:max-1440p:mb-[220px] relative z-[70] mx-auto`}
+      className={`${styles.bodyContainer} md:max-lg:mb-[180px] lg:max-xl:mb-[143px] xl:max-1440p:mb-[220px] relative z-[70] mx-auto`}
     >
       <div id="cards" className={styles.cards} ref={cardsContainerRef}>
         {CardsData.map((card, index) => (

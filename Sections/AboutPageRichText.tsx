@@ -38,21 +38,24 @@ const AboutPageRichText = () => {
           // @ts-expect-error random
           const svgRect = svgRef.current.getBoundingClientRect();
 
-          const yDelta = targetRect.top - svgRect.top;
+          console.log('tragetRect.top', targetRect.top)
+          console.log('svgRect.top', svgRect.top)
+
+          const yDelta = isTablet ? targetRect.top - svgRect.top + 32 : targetRect.top - svgRect.top;
 
           gsap.to(smallSvgRef.current, {
             scrollTrigger: {
               trigger: smallSvgRef.current,
-                start: () => {
-                  const triggerElement = containerRef.current;
-                  // @ts-expect-error random
-                  return "top top+=" + (triggerElement.offsetHeight + 50);
-                },
-                end: () => {
-                  const triggerElement = containerRef.current;
-                  // @ts-expect-error random
-                  return "bottom top+=" + (triggerElement.offsetHeight + 50);
-                },
+              start: () => {
+                const triggerElement = containerRef.current;
+                // @ts-expect-error random
+                return "top top+=" + (triggerElement.offsetHeight + 50);
+              },
+              end: () => {
+                const triggerElement = containerRef.current;
+                // @ts-expect-error random
+                return "bottom top+=" + (triggerElement.offsetHeight + 50);
+              },
               scrub: 1,
             },
             scale: 0,
@@ -95,7 +98,10 @@ const AboutPageRichText = () => {
   );
 
   return (
-    <div ref={mainContainerRef} className="h-[130vh] pointer-events-none">
+    <div
+      ref={mainContainerRef}
+      className="md:max-lg:h-[120vh] h-[130vh] pointer-events-none"
+    >
       <div
         style={{
           height: "calc(50%)",
@@ -378,7 +384,7 @@ const AboutPageRichText = () => {
         className="pt-8"
         style={{
           height: "calc(50%)",
-          maxHeight: "570px"
+          maxHeight: "570px",
         }}
       >
         <svg
@@ -403,7 +409,7 @@ const AboutPageRichText = () => {
             fill="#F3EDDE"
           />
         </svg>
-        <p className="font-light text-center lg:max-xl:w-9/10 xl:max-1440p:w-4/5 mx-auto text-[#F3EDDE] lg:max-1440p:text-[1.25rem]/[2.5rem] lg:max-xl:mt-15 xl:max-1440p:mt-20">
+        <p className="font-light text-center md:max-lg:w-[85%] lg:max-xl:w-9/10 xl:max-1440p:w-4/5 mx-auto text-[#F3EDDE] md:max-lg:text-[1rem]/[2rem] lg:max-1440p:text-[1.25rem]/[2.5rem] md:max-lg:mt-12 lg:max-xl:mt-15 xl:max-1440p:mt-20">
           With the inspiration of designing we started back in 2014 and bringing
           them to reality since then. From cosmetic startups to big automotive
           companies we had fun working at different scales and industries. We

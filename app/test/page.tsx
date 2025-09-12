@@ -14,38 +14,38 @@ const AboutPageRichText = () => {
   const richTxtRef = useRef(null);
   const mainContainerRef = useRef(null);
 
-  useGSAP(
-    () => {
-      // @ts-expect-error random
-      const targetRect = richTxtRef.current.getBoundingClientRect();
-      // @ts-expect-error random
-      const svgRect = svgRef.current.getBoundingClientRect();
+  // useGSAP(
+  //   () => {
+  //     // @ts-expect-error random
+  //     const targetRect = richTxtRef.current.getBoundingClientRect();
+  //     // @ts-expect-error random
+  //     const svgRect = svgRef.current.getBoundingClientRect();
 
-      const yDelta = targetRect.top - svgRect.top;
-      const xDelta = targetRect.left - svgRect.left;
-      const scale = targetRect.width / svgRect.width;
+  //     const yDelta = targetRect.top - svgRect.top;
+  //     const xDelta = targetRect.left - svgRect.left;
+  //     const scale = targetRect.width / svgRect.width;
 
-      gsap
-        .timeline({
-          scrollTrigger: {
-            trigger: containerRef.current,
-            markers: true,
-            start: "top top",
-            end: "bottom top",
-            scrub: true,
-            // pin: svgRef.current, // Pin the SVG while animating
-            anticipatePin: 1,
-          },
-        })
-        .to(svgRef.current, {
-          x: -70,
-          y: yDelta,
-          scale: 0.6,
-          ease: "none",
-        });
-    },
-    { dependencies: [] }
-  );
+  //     gsap
+  //       .timeline({
+  //         scrollTrigger: {
+  //           trigger: containerRef.current,
+  //           markers: true,
+  //           start: "top top",
+  //           end: "bottom top",
+  //           scrub: true,
+  //           // pin: svgRef.current, // Pin the SVG while animating
+  //           anticipatePin: 1,
+  //         },
+  //       })
+  //       .to(svgRef.current, {
+  //         x: -70,
+  //         y: yDelta,
+  //         scale: 0.6,
+  //         ease: "none",
+  //       });
+  //   },
+  //   { dependencies: [] }
+  // );
 
   return (
     <div ref={mainContainerRef} className="h-[1100px]">

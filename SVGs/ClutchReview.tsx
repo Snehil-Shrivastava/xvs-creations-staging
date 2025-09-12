@@ -1,6 +1,6 @@
 import React from "react";
 
-const ClutchReview = () => {
+const ClutchReview = ({className}: {className?: string}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -8,6 +8,7 @@ const ClutchReview = () => {
       height="19"
       viewBox="0 0 63 19"
       fill="none"
+      className={className ? className : ''}
     >
       <path
         d="M16.1494 0.700928H19.0066V18.3407H16.1494V0.700928Z"

@@ -8,7 +8,7 @@ const Amity = ({className}: {className?: string}) => {
       height="36"
       viewBox="0 0 128 36"
       fill="none"
-      className={`${className} inline-block lg:max-xl:w-[80px]`}
+      className={`${className} inline-block`}
     >
       <g clipPath="url(#clip0_2533_1843)">
         <path

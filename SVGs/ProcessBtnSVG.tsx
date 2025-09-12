@@ -6,7 +6,7 @@ const ProcessBtnSVG = () => {
       height="7"
       viewBox="0 0 8 7"
       fill="none"
-      className="max-[426px]:scale-[1.2] origin-center max-[769px]:scale-[2] max-[1349px]:scale-[2.2] max-[1441px]:scale-[3] max-[1906px]:scale-[3] min-[1906px]:scale-[3]"
+      className="origin-center md:max-lg:scale-[1.6] lg:max-1440p:scale-[2.2]"
     >
       <mask id="path-1-inside-1_3814_1660" fill="white">
         <path
